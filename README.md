@@ -156,3 +156,80 @@ Example:
 ### HTML comments
 
 HTML comments are used to annotate something that will be ignored during rendering. To add an HTML comment, it is wrapped between ```<!-- and -->```, regardless of the number of lines.
+
+<br>
+<br>
+
+## What is semantic HTML?
+
+Semantic HTML means that each element has its own tag that accurately defines its purpose, avoiding the use of overly general tags like ```<div>``` or ```<span>```.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/daw-m03b-programming/blob/main/uf4/images/semantic-schema.png?raw=true" width= "99%" alt="Semantic Schema">
+</p>
+
+<br>
+
+### The Problem with the div Tag
+The *div* tag defines a generic block of content that lacks semantic value. It's used for design elements like containers.
+
+<br>
+
+### Which Tags Are Semantic?
+Semantic tags to define a web page's interface include:
+
+  - ```<header>```: Defines the page's header (not to be confused with ```<head>```).
+  - ```<nav>```: Defines a navigation bar with links.
+  - ```<section>```: Defines a section of the page.
+  - ```<footer>```: Defines a footer for a page or section.
+  - ```<article>```: Defines an article, which can have its own header, navigation, section, or footer.
+  
+Now that you know about semantic tags, try to avoid overusing ```<div>```.
+
+<br>
+
+Example:
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Desafío HTML</title>
+</head>
+
+<body>
+  <header>
+    Soy el encabezado
+  </header>
+  <nav>
+    <ul>
+      <li>Soy un enlace</li>
+      <li>Soy un enlace</li>
+      <li>Soy un enlace</li>
+    </ul>
+  </nav>
+  <article>
+    Soy un artículo
+  </article>
+  <section>
+    Soy una sección
+  </section>
+
+  <footer>Soy el pie de página</footer>
+</body>
+
+</html>
+```
+
+
+<br>
+
+### Advantages of Using Semantic HTML
+The benefits of using semantic HTML include:
+
+  - Helps make your site more accessible
+  - Improves your SEO (Search Engine Optimization)
+  - Leads to clearer, more readable, and maintainable code
+  - Helps search engines (like Google) find your page
+  - [Go deep into the advantages here](https://www.espai.es/blog/2018/01/que-es-el-html-semantico/)
