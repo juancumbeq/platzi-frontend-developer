@@ -245,6 +245,10 @@ The benefits of using semantic HTML include:
 
 ## Most used HTML tags
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/most-used-tags.png?raw=true" width= "75%" alt="Most used tags">
+</p>
+
 Check the links below to see more information about the most used HTML tags:
 
   - [htmlreference.io](https://htmlreference.io/)
