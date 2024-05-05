@@ -490,51 +490,187 @@ Selects the unique element that matches the HTML tag with a specific ID attribut
 <!-- HTML File -->
 <button id="delete">Delete</button>
 ```
-To select this element, use a hashtag # followed by the exact ID attribute value.
-css
-
+To select this element, use a hashtag ```#``` followed by the exact ID attribute value.
+```
 /* CSS File */
+
 #delete {
     /* The only tag with the ID "delete" */
 }
-ID Selector Challenge
-From a set of <button> tags, find the single button for deletion. Try setting a red background color for this element.Solution to the ID Selector Challenge
-Attribute Selector
-Selects elements that match the HTML tag with a specific attribute and value.
-html
+```
 
+ID Selector Challenge:
+```
+From a set of <button> tags, find the single button for deletion. Try setting a red background color for this element.
+
+HTML File:
+
+<button>Soy el button 1</button>
+<button>Soy el button 2</button>
+<button>Soy el button 3</button>
+<button>Soy el button 4</button>
+<button>Soy el button 5</button>
+<button>Soy el button 6</button>
+<button>Soy el button 7</button>
+<button>Soy el button 8</button>
+<button>Soy el button 9</button>
+<button id="eliminar">¡Elimínalo!!!!!!!!</button>
+```
+```
+CSS File:
+
+/*Agrega los selectores aquí */
+#eliminar{
+  background-color: red;
+}
+/*Agrega los selectores aquí */
+
+
+/* Ignora esto, por ahora */
+* {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+```
+Check the demo [here](https://codi.link/PGJ1dHRvbj5Tb3kgZWwgYnV0dG9uIDE8L2J1dHRvbj4NCjxidXR0b24+U295IGVsIGJ1dHRvbiAyPC9idXR0b24+DQo8YnV0dG9uPlNveSBlbCBidXR0b24gMzwvYnV0dG9uPg0KPGJ1dHRvbj5Tb3kgZWwgYnV0dG9uIDQ8L2J1dHRvbj4NCjxidXR0b24+U295IGVsIGJ1dHRvbiA1PC9idXR0b24+DQo8YnV0dG9uPlNveSBlbCBidXR0b24gNjwvYnV0dG9uPg0KPGJ1dHRvbj5Tb3kgZWwgYnV0dG9uIDc8L2J1dHRvbj4NCjxidXR0b24+U295IGVsIGJ1dHRvbiA4PC9idXR0b24+DQo8YnV0dG9uPlNveSBlbCBidXR0b24gOTwvYnV0dG9uPg0KPGJ1dHRvbiBpZD0iZWxpbWluYXIiPsKhRWxpbcOtbmFsbyEhISEhISEhPC9idXR0b24+%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCiNlbGltaW5hcnsNCiAgYmFja2dyb3VuZC1jb2xvcjogcmVkOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg0KDQovKiBJZ25vcmEgZXN0bywgcG9yIGFob3JhICovDQoqIHsNCiAgZm9udC1zaXplOiAxLjJyZW07DQogIHBhZGRpbmc6IDVweDsNCiAgbWFyZ2luLWJvdHRvbTogMTBweDsNCn0=%7C)
+
+<br>
+
+#### **4. Attribute Selector**
+Selects elements that match the HTML tag with a specific attribute and value.
+```
 <!-- HTML File -->
 <a href="https://example.com">Visit Example</a>
-To select these elements, use the tag name followed by square brackets [] containing the specified attribute and value.
-css
+```
+
+To select these elements, use the tag name followed by square brackets ``[]`` containing the specified attribute and value.
+```
+CSS File:
 
 a[href="https://example.com"] {
     /* All <a> tags with an href attribute value of "https://example.com" */
 }
-Attribute Selector Challenge
-Try setting a background color to all <a> tags that contain the href attribute with the value "https://example.com".Solution to the Attribute Selector Challenge
-Universal Selector
-Selects all elements in the document using an asterisk *.
-css
+```
 
+Attribute Selector Challenge:
+```
+Try setting a background color to all <a> tags that contain the href attribute with the value "https://example.com".
+
+HTML File:
+<a href="https://platzi.com">Ir a platzi</a>
+<a href="#">Soy un enlace 1</a>
+<a href="#">Soy un enlace 2</a>
+<a href="#">Soy un enlace 3</a>
+<a href="https://platzi.com">Ir a platzi</a>
+<a href="#">Soy un enlace 5</a>
+<a href="#">Soy un enlace 6</a>
+<a href="#">Soy un enlace 7</a>
+<a href="https://platzi.com">Ir a platzi</a>
+<a href="#">Soy un enlace 8</a>
+<a href="#">Soy un enlace 9</a>
+```
+```
+CSS File:
+/*Agrega los selectores aquí */
+a[href="https://platzi.com"]{
+  background-color: greenyellow;
+}
+/*Agrega los selectores aquí */
+
+
+/* Ignora esto, por ahora */
+* {
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+a {
+  display: block;
+}
+```
+
+Check the demo [here](https://codi.link/PGEgaHJlZj0iaHR0cHM6Ly9wbGF0emkuY29tIj5JciBhIHBsYXR6aTwvYT4NCjxhIGhyZWY9IiMiPlNveSB1biBlbmxhY2UgMTwvYT4NCjxhIGhyZWY9IiMiPlNveSB1biBlbmxhY2UgMjwvYT4NCjxhIGhyZWY9IiMiPlNveSB1biBlbmxhY2UgMzwvYT4NCjxhIGhyZWY9Imh0dHBzOi8vcGxhdHppLmNvbSI+SXIgYSBwbGF0emk8L2E+DQo8YSBocmVmPSIjIj5Tb3kgdW4gZW5sYWNlIDU8L2E+DQo8YSBocmVmPSIjIj5Tb3kgdW4gZW5sYWNlIDY8L2E+DQo8YSBocmVmPSIjIj5Tb3kgdW4gZW5sYWNlIDc8L2E+DQo8YSBocmVmPSJodHRwczovL3BsYXR6aS5jb20iPklyIGEgcGxhdHppPC9hPg0KPGEgaHJlZj0iIyI+U295IHVuIGVubGFjZSA4PC9hPg0KPGEgaHJlZj0iIyI+U295IHVuIGVubGFjZSA5PC9hPg==%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCmFbaHJlZj0iaHR0cHM6Ly9wbGF0emkuY29tIl17DQogIGJhY2tncm91bmQtY29sb3I6IGdyZWVueWVsbG93Ow0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg0KDQovKiBJZ25vcmEgZXN0bywgcG9yIGFob3JhICovDQoqIHsNCiAgZm9udC1zaXplOiAxLjJyZW07DQogIHBhZGRpbmc6IDVweDsNCiAgbWFyZ2luLWJvdHRvbTogMTBweDsNCn0NCg0KYSB7DQogIGRpc3BsYXk6IGJsb2NrOw0KfQ==%7C)
+
+<br>
+
+
+#### **5. Universal Selector**
+Selects all elements in the document using an asterisk ``*``.
+```
 * {
     /* All elements */
 }
-Universal Selector Challenge
-Try setting a background color to all elements in the document.Solution to the Universal Selector Challenge
-What Are Combinator Selectors?
+```
+
+Universal Selector Challenge:
+```
+Try setting a background color to all elements in the document.
+
+HTML File:
+<div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div></div>
+<div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div></div>
+<div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<div></div>
+```
+```
+CSS File:
+
+/*Agrega los selectores aquí */
+* {
+  background-color: papayawhip;
+}
+/*Agrega los selectores aquí */
+```
+
+Check the demo [here](https://codi.link/PGRpdj4NCiAgPHVsPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICA8L3VsPg0KPC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj4NCiAgPHVsPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICA8L3VsPg0KPC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj4NCiAgPHVsPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICAgIDxsaT48L2xpPg0KICA8L3VsPg0KPC9kaXY+DQo8ZGl2PjwvZGl2Pg0KDQo=%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCiogew0KICBiYWNrZ3JvdW5kLWNvbG9yOiBwYXBheWF3aGlwOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg==%7C)
+
+<br>
+
+### What Are Combinator Selectors?
 A combinator selector is the combination of two or more basic selectors.
-
-css
-
+```
 selector1 selector2 selector3 {
     /* Styles */
 }
-Types of Combinator Selectors
-Descendant Combinator
-Selects all elements on the right that are descendants of the selector on the left, regardless of depth. These selectors are separated by a space.
-css
+```
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/combinator-selectors.png?raw=true" width= "75%" alt="Combinator selectors">
+</p>
 
+<br>
+
+### Types of Combinator Selectors
+#### **1. Descendant Combinator**
+Selects all elements on the right that are descendants of the selector on the left, regardless of depth. These selectors are separated by a space.
+```
 parent children {
     /* All descendants of the parent */
 }
@@ -546,12 +682,62 @@ div p {
 .container img {
     /* All <img> descendants of the class "container" */
 }
-Descendant Combinator Challenge
-Try setting a text color to all <li> tags that are children of the class "container".Solution to the Descendant Combinator Challenge
-Child Combinator
-Selects all elements on the right that are direct children of the selector on the left. These selectors are separated by >.
-css
+```
+Descendant Combinator Challenge:
+```
+Try setting a text color to all <li> tags that are children of the class "container".
 
+HTML File:
+
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>Más opciones</li>
+  </ul>
+</nav>
+<div class="container">
+  <ul>
+    <li>Lista 1</li>
+    <li>Lista 2</li>
+    <li>Lista 3</li>
+    <li>Lista 4</li>
+    <li>Lista 5</li>
+    <li>Lista 6</li>
+    <li>Lista 7</li>
+    <li>Lista 8</li>
+    <li>Lista 9</li>
+    <li>Lista 10</li>
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li>Conoce la empresa</li>
+    <li>Más actividades</li>
+    <li>Acerca de nosotros</li>
+  </ul>
+</footer>
+
+```
+
+```
+CSS File:
+* {
+  font-size: 1.2rem;
+}
+
+/*Agrega los selectores aquí */
+.container li{
+  color: red;
+}
+/*Agrega los selectores aquí */
+```
+Check the demo [here](https://codi.link/PG5hdj4NCiAgPHVsPg0KICAgIDxsaT5Ib21lPC9saT4NCiAgICA8bGk+TcOhcyBvcGNpb25lczwvbGk+DQogIDwvdWw+DQo8L25hdj4NCjxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogIDx1bD4NCiAgICA8bGk+TGlzdGEgMTwvbGk+DQogICAgPGxpPkxpc3RhIDI8L2xpPg0KICAgIDxsaT5MaXN0YSAzPC9saT4NCiAgICA8bGk+TGlzdGEgNDwvbGk+DQogICAgPGxpPkxpc3RhIDU8L2xpPg0KICAgIDxsaT5MaXN0YSA2PC9saT4NCiAgICA8bGk+TGlzdGEgNzwvbGk+DQogICAgPGxpPkxpc3RhIDg8L2xpPg0KICAgIDxsaT5MaXN0YSA5PC9saT4NCiAgICA8bGk+TGlzdGEgMTA8L2xpPg0KICA8L3VsPg0KPC9kaXY+DQo8Zm9vdGVyPg0KICA8dWw+DQogICAgPGxpPkNvbm9jZSBsYSBlbXByZXNhPC9saT4NCiAgICA8bGk+TcOhcyBhY3RpdmlkYWRlczwvbGk+DQogICAgPGxpPkFjZXJjYSBkZSBub3NvdHJvczwvbGk+DQogIDwvdWw+DQo8L2Zvb3Rlcj4NCg==%7CKiB7DQogIGZvbnQtc2l6ZTogMS4ycmVtOw0KfQ0KDQovKkFncmVnYSBsb3Mgc2VsZWN0b3JlcyBhcXXDrSAqLw0KLmNvbnRhaW5lciBsaXsNCiAgY29sb3I6IHJlZDsNCn0NCi8qQWdyZWdhIGxvcyBzZWxlY3RvcmVzIGFxdcOtICovDQo=%7C)
+
+<br>
+
+#### **2. Child Combinator**
+Selects all elements on the right that are direct children of the selector on the left. These selectors are separated by ``>``.
+```
 parent > direct_children {
     /* All direct children of the parent */
 }
@@ -563,12 +749,54 @@ div > p {
 .container > img {
     /* All direct children <img> of the class "container" */
 }
-Child Combinator Challenge
-Try setting a text color to all <p> tags that are direct children of the class "container".Solution to the Child Combinator Challenge
-Adjacent Sibling Combinator
-Selects all elements on the right that are adjacent to the selector on the left. These selectors are separated by +.
-css
+```
 
+Child Combinator Challenge:
+```
+Try setting a text color to all <p> tags that are direct children of the class "container".
+
+HTML File:
+
+<div class="container">
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <p>Soy un hijo directo</p>
+  <div>
+    <p>Soy un hijo indirecto o ñeto</p>
+    <p>Soy un hijo indirecto o ñeto</p>
+    <p>Soy un hijo indirecto o ñeto</p>
+    <p>Soy un hijo indirecto o ñeto</p>
+    <p>Soy un hijo indirecto o ñeto</p>
+  </div>
+</div>
+```
+```
+CSS File:
+
+* {
+  font-size: 1.2rem;
+}
+
+/*Agrega los selectores aquí */
+.container > p {
+  color: red;
+}
+/*Agrega los selectores aquí */
+```
+Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPHA+U295IHVuIGhpam8gZGlyZWN0bzwvcD4NCiAgPGRpdj4NCiAgICA8cD5Tb3kgdW4gaGlqbyBpbmRpcmVjdG8gbyDDsWV0bzwvcD4NCiAgICA8cD5Tb3kgdW4gaGlqbyBpbmRpcmVjdG8gbyDDsWV0bzwvcD4NCiAgICA8cD5Tb3kgdW4gaGlqbyBpbmRpcmVjdG8gbyDDsWV0bzwvcD4NCiAgICA8cD5Tb3kgdW4gaGlqbyBpbmRpcmVjdG8gbyDDsWV0bzwvcD4NCiAgICA8cD5Tb3kgdW4gaGlqbyBpbmRpcmVjdG8gbyDDsWV0bzwvcD4NCiAgPC9kaXY+DQo8L2Rpdj4NCg==%7CKiB7DQogIGZvbnQtc2l6ZTogMS4ycmVtOw0KfQ0KDQovKkFncmVnYSBsb3Mgc2VsZWN0b3JlcyBhcXXDrSAqLw0KLmNvbnRhaW5lciA+IHAgew0KICBjb2xvcjogcmVkOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg==%7C)
+
+<br>
+
+#### **3. Adjacent Sibling Combinator**
+Selects all elements on the right that are adjacent to the selector on the left. These selectors are separated by ``+``.
+```
 element + adjacent {
     /* Adjacent elements */
 }
@@ -580,19 +808,63 @@ div + p {
 .container + img {
     /* All <img> adjacent to the class "container" */
 }
-Adjacent means they share the same parent and are placed immediately after another element. For example, in the following code, <div> is adjacent to <h1>, and <p> is adjacent to <div>. However, <h1> is not adjacent to <div>, and <div> is not adjacent to <p>.
-html
-
+```
+Adjacent means they share the same parent and are placed immediately after another element. For example, in the following code, ``<div>`` is adjacent to ``<h1>``, and ``<p>`` is adjacent to ``<div>``. However, ``<h1>`` is not adjacent to ``<div>``, and ``<div>`` is not adjacent to ``<p>``.
+```
 <!-- HTML File -->
 <h1>I'm a header</h1>
 <div>I'm a div</div>
 <p>I'm a paragraph</p>
-Adjacent Sibling Combinator Challenge
-Try setting a text color to all <p> tags that are adjacent to <div> tags.Solution to the Adjacent Sibling Combinator Challenge
-General Sibling Combinator
-Selects all elements on the right that are siblings of the selector on the left. These selectors are separated by ~.
-css
+```
 
+Adjacent Sibling Combinator Challenge:
+```
+Try setting a text color to all <p> tags that are adjacent to <div> tags.
+
+HTML File:
+
+<p>Soy otro párrafo</p>
+<div>Soy un div</div>
+<p>Soy un párrafo adyacente a div</p>
+<p>Soy otro párrafo</p>
+<p>Soy otro párrafo</p>
+<hr/>
+<p>Soy otro párrafo</p>
+<div>Soy un div</div>
+<p>Soy un párrafo adyacente a div</p>
+<p>Soy otro párrafo</p>
+<p>Soy otro párrafo</p>
+<hr/>
+<p>Soy otro párrafo</p>
+<div>Soy un div</div>
+<p>Soy un párrafo adyacente a div</p>
+<p>Soy otro párrafo</p>
+<p>Soy otro párrafo</p>
+<hr/>
+<p>Soy otro párrafo</p>
+<div>Soy un div</div>
+<p>Soy un párrafo adyacente a div</p>
+<p>Soy otro párrafo</p>
+<p>Soy otro párrafo</p>
+<hr/>
+```
+```
+CSS File:
+
+/*Agrega los selectores aquí */
+div + p {
+  color: red;
+}
+/*Agrega los selectores aquí */
+```
+
+Check the demo [here](https://codi.link/PHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8ZGl2PlNveSB1biBkaXY8L2Rpdj4NCjxwPlNveSB1biBww6FycmFmbyBhZHlhY2VudGUgYSBkaXY8L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPGhyLz4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPGRpdj5Tb3kgdW4gZGl2PC9kaXY+DQo8cD5Tb3kgdW4gcMOhcnJhZm8gYWR5YWNlbnRlIGEgZGl2PC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxoci8+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxkaXY+U295IHVuIGRpdjwvZGl2Pg0KPHA+U295IHVuIHDDoXJyYWZvIGFkeWFjZW50ZSBhIGRpdjwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8aHIvPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8ZGl2PlNveSB1biBkaXY8L2Rpdj4NCjxwPlNveSB1biBww6FycmFmbyBhZHlhY2VudGUgYSBkaXY8L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPGhyLz4=%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCmRpdiArIHAgew0KICBjb2xvcjogcmVkOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg==%7C)
+
+<br>
+
+#### **4. General Sibling Combinator**
+Selects all elements on the right that are siblings of the selector on the left. These selectors are separated by ``~``.
+```
 element ~ siblings {
     /* Sibling elements */
 }
@@ -604,17 +876,40 @@ div ~ p {
 .container ~ img {
     /* All <img> siblings of the class "container" */
 }
-Siblings share the same parent and are placed after one another. For example, in the following code, <div> and <p> are siblings of <h1>, but <h1> is not a sibling of <div>, and <div> is not a sibling of <p>.
-html
-
+```
+Siblings share the same parent and are placed after one another. For example, in the following code, ``<div>`` and ``<p>`` are siblings of ``<h1>``, but ``<h1>`` is not a sibling of ``<div>``, and ``<div>`` is not a sibling of ``<p>``.
+```
 <!-- HTML File -->
 <h1>I'm a header</h1>
 <div>I'm a div</div>
 <p>I'm a paragraph</p>
+```
 
+General Sibling Combinator Challenge:
+```
+Try to set a text color for all <p> tags that are siblings of <div>.
 
+HTML File:
 
+<div class="container">
+  <p>Soy otro párrafo</p>
+  <div>Soy un div</div>
+  <p>Soy un párrafo hermano de div</p>
+  <p>Soy un párrafo hermano de div</p>
+  <p>Soy un párrafo hermano de div</p>
+</div>
+<hr/>
+```
+```
+CSS File:
+/*Agrega los selectores aquí */
+div ~ p {
+  color: red;
+}
+/*Agrega los selectores aquí */
 
+```
+Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQogIDxkaXY+U295IHVuIGRpdjwvZGl2Pg0KICA8cD5Tb3kgdW4gcMOhcnJhZm8gaGVybWFubyBkZSBkaXY8L3A+DQogIDxwPlNveSB1biBww6FycmFmbyBoZXJtYW5vIGRlIGRpdjwvcD4NCiAgPHA+U295IHVuIHDDoXJyYWZvIGhlcm1hbm8gZGUgZGl2PC9wPg0KPC9kaXY+DQo8aHIvPg==%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCmRpdiB+IHAgew0KICBjb2xvcjogcmVkOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg==%7C)
 
 
 <br>
