@@ -354,6 +354,10 @@ selector {
   /* Styles */
 }
 ```
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/basic-selectors.png?raw=true" width= "75%" alt="Basic selectors">
+</p>
+
 
 <br>
 
