@@ -291,12 +291,102 @@ Example:
 </html>
 ```
 
-
 <br>
 <br>
 <br>
 
 # CSS LAYOUT
+## Anatomy of a CSS declaration: selectors, properties and values
+
+Before we start writing CSS code, we need to understand the anatomy of a style declaration.
+
+<br>
+
+### What is a CSS declaration?
+A CSS declaration is a block that specifies the set of styles to be added to an HTML element. Its structure includes the following:
+
+  - **Selector**: Defines the element or set of elements to which styles will be applied.
+  - **Property**: The name of the CSS style.
+  - **Value**: The value that the property will take on.
+
+Example:
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/css-declaration.png?raw=true" width= "75%" alt="CSS declaration">
+</p>
+
+<br>
+
+### What are CSS comments?
+CSS comments are used to indicate something that should be ignored. To create a CSS comment, wrap it between ```/*``` and ```*/```, regardless of the number of lines.
+
+<br>
+
+### Basic CSS properties
+Before starting with CSS, let's use some initial CSS properties:
+
+  - **color**: Sets the text color of an element.
+  - **background-color**: Sets the background color for an element.
+  - **font-size**: Sets the font size.
+  - **width**: Sets the width of an element.
+  - **height**: Sets the height of an element.
+
+<br>
+
+### Basic units of measurement
+These are the initial units of measurement you should know to set the sizes of elements or typography:
+
+  - **px**: Represents a length in pixels.
+  - **%**: Represents a percentage relative to a base measurement.
+
+<br>
+<br>
+
+## Selectors types: basics and combiners
+
+<br>
+<br>
+
+## Selectors types: pseudoclasses and pseudoelements
+
+<br>
+<br>
+
+## Cascading and specificity in CSS
+
+<br>
+<br>
+
+## Most used display types: block, inline and inline-block
+
+<br>
+<br>
+
+## Most used display types: flexbox and CSS grid
+
+<br>
+<br>
+
+## Box model
+
+<br>
+<br>
+
+## Image collapse
+
+<br>
+<br>
+
+## CSS positioning
+
+<br>
+<br>
+
+## Z-index and the stacking context
+
+<br>
+<br>
+
+## Most used CSS properties and values
 
 <br>
 <br>
@@ -304,14 +394,31 @@ Example:
 
 # RESPONSIVE DESIGN
 
+## Measurement units
+
+<br>
+<br>
+
+## Responsive design
+
 <br>
 <br>
 <br>
 
 # CSS ARCHITECTURE
 
+## What are the CSS architectures? What are they used for?
+
+## OOCSS, BEM, SMACCSS, ITCSS and Atomic Design
+
 <br>
 <br>
 <br>
 
 # NEXT STEPS
+
+## CSS for interviews and labor market
+
+<br>
+<br>
+<br>
