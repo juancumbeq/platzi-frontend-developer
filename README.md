@@ -176,12 +176,12 @@ Semantic HTML means that each element has its own tag that accurately defines it
 
 <br>
 
-### The Problem with the div Tag
+### The problem with the ```div``` tag
 The *div* tag defines a generic block of content that lacks semantic value. It's used for design elements like containers.
 
 <br>
 
-### Which Tags Are Semantic?
+### Which tags are semantic?
 Semantic tags to define a web page's interface include:
 
   - ```<header>```: Defines the page's header (not to be confused with ```<head>```).
@@ -342,6 +342,280 @@ These are the initial units of measurement you should know to set the sizes of e
 <br>
 
 ## Selectors types: basics and combiners
+
+Selectors in CSS define the HTML element or set of elements to which styles will be applied. CSS has built-in color names that you can explore. Let's dive deeper into selectors.
+
+<br>
+
+### What are basic selectors?
+A basic selector is the minimal CSS expression to apply styles.
+```
+selector {
+  /* Styles */
+}
+```
+
+<br>
+
+### Types of Basic Selectors
+#### **1. Type Selector**: 
+Selects all elements that match the HTML tag name.
+```
+div {
+    /* All divs in the document */
+}
+```
+Type Selector Challenge:
+```
+Try setting a background color for 10 <div> tags with a single selector using the background-color property.
+
+HTML file:
+
+<div>Soy el div 1</div>
+<div>Soy el div 2</div>
+<div>Soy el div 3</div>
+<div>Soy el div 4</div>
+<div>Soy el div 5</div>
+<div>Soy el div 6</div>
+<div>Soy el div 7</div>
+<div>Soy el div 8</div>
+<div>Soy el div 9</div>
+<div>Soy el div 10</div>
+```
+```
+CSS file:
+
+div{
+  background-color: aqua;
+}
+
+/* Ignora esto, por ahora */
+* {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+```
+
+Check the demo [here](https://codi.link/PGRpdj5Tb3kgZWwgZGl2IDE8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiAyPC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgMzwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDQ8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiA1PC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgNjwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDc8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiA4PC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgOTwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDEwPC9kaXY+%7CZGl2ew0KICBiYWNrZ3JvdW5kLWNvbG9yOiBhcXVhOw0KfQ0KDQovKiBJZ25vcmEgZXN0bywgcG9yIGFob3JhICovDQoqIHsNCiAgZm9udC1zaXplOiAxLjVyZW07DQogIG1hcmdpbi1ib3R0b206IDEwcHg7DQp9%7C)
+
+<br>
+
+#### **2. Class Selector**
+Selects all elements that match the HTML tags with a specific **class** attribute.
+```
+<!-- HTML File -->
+<div class="card">I'm a card</div>
+```
+
+To select these elements, use a dot ``.`` followed by the exact class attribute value. This can be any value you want.
+```
+/* CSS File */
+.card {
+    /* All tags with the class "card" */
+}
+```
+
+Multiple class values can exist within a single class attribute, separated by spaces.
+```
+<!-- HTML File -->
+<div class="card card1">I'm a card</div>
+<div class="card card2">I'm a card</div>
+```
+```
+/* CSS File */
+.card {
+    /* All tags with the class "card" */
+}
+
+.card1 {
+    /* All tags with the class "card1" */
+}
+
+.card2 {
+    /* All tags with the class "card2" */
+}
+```
+
+Class Selector Challenge:
+```
+From a set of <div> tags, try setting a background color to the ones containing the class "card" with a single selector. Then, try setting a different text color for tags containing "card1" and "card2".
+
+HTMl File:
+
+<div>Soy el div 1</div>
+<div>Soy el div 2</div>
+<div class="card card1">Soy card-1</div>
+<div>Soy el div 3</div>
+<div>Soy el div 4</div>
+<div class="card">Soy solo card</div>
+<div>Soy el div 5</div>
+<div>Soy el div 6</div>
+<div>Soy el div 7</div>
+<div class="card card2">Soy card-2</div>
+<div>Soy el div 8</div>
+<div>Soy el div 9</div>
+<div>Soy el div 10</div>
+```
+```
+CSS File:
+
+/*Agrega los selectores aquí */
+.card {
+  background-color: aqua;
+}
+
+.card1{
+  color: red;
+}
+
+.card2{
+  color: blue;
+}
+/*Agrega los selectores aquí */
+
+
+/* Ignora esto, por ahora */
+* {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+```
+Check the demo [here](https://codi.link/PGRpdj5Tb3kgZWwgZGl2IDE8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiAyPC9kaXY+DQo8ZGl2IGNsYXNzPSJjYXJkIGNhcmQxIj5Tb3kgY2FyZC0xPC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgMzwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDQ8L2Rpdj4NCjxkaXYgY2xhc3M9ImNhcmQiPlNveSBzb2xvIGNhcmQ8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiA1PC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgNjwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDc8L2Rpdj4NCjxkaXYgY2xhc3M9ImNhcmQgY2FyZDIiPlNveSBjYXJkLTI8L2Rpdj4NCjxkaXY+U295IGVsIGRpdiA4PC9kaXY+DQo8ZGl2PlNveSBlbCBkaXYgOTwvZGl2Pg0KPGRpdj5Tb3kgZWwgZGl2IDEwPC9kaXY+%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCi5jYXJkIHsNCiAgYmFja2dyb3VuZC1jb2xvcjogYXF1YTsNCn0NCg0KLmNhcmQxew0KICBjb2xvcjogcmVkOw0KfQ0KDQouY2FyZDJ7DQogIGNvbG9yOiBibHVlOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg0KDQovKiBJZ25vcmEgZXN0bywgcG9yIGFob3JhICovDQoqIHsNCiAgZm9udC1zaXplOiAxLjVyZW07DQogIG1hcmdpbi1ib3R0b206IDEwcHg7DQp9%7C)
+
+<br>
+
+#### **3. ID Selector**
+Selects the unique element that matches the HTML tag with a specific ID attribute. There should only be one ID value for the entire document.
+```
+<!-- HTML File -->
+<button id="delete">Delete</button>
+```
+To select this element, use a hashtag # followed by the exact ID attribute value.
+css
+
+/* CSS File */
+#delete {
+    /* The only tag with the ID "delete" */
+}
+ID Selector Challenge
+From a set of <button> tags, find the single button for deletion. Try setting a red background color for this element.Solution to the ID Selector Challenge
+Attribute Selector
+Selects elements that match the HTML tag with a specific attribute and value.
+html
+
+<!-- HTML File -->
+<a href="https://example.com">Visit Example</a>
+To select these elements, use the tag name followed by square brackets [] containing the specified attribute and value.
+css
+
+a[href="https://example.com"] {
+    /* All <a> tags with an href attribute value of "https://example.com" */
+}
+Attribute Selector Challenge
+Try setting a background color to all <a> tags that contain the href attribute with the value "https://example.com".Solution to the Attribute Selector Challenge
+Universal Selector
+Selects all elements in the document using an asterisk *.
+css
+
+* {
+    /* All elements */
+}
+Universal Selector Challenge
+Try setting a background color to all elements in the document.Solution to the Universal Selector Challenge
+What Are Combinator Selectors?
+A combinator selector is the combination of two or more basic selectors.
+
+css
+
+selector1 selector2 selector3 {
+    /* Styles */
+}
+Types of Combinator Selectors
+Descendant Combinator
+Selects all elements on the right that are descendants of the selector on the left, regardless of depth. These selectors are separated by a space.
+css
+
+parent children {
+    /* All descendants of the parent */
+}
+
+div p {
+    /* All <p> descendants of <div> */
+}
+
+.container img {
+    /* All <img> descendants of the class "container" */
+}
+Descendant Combinator Challenge
+Try setting a text color to all <li> tags that are children of the class "container".Solution to the Descendant Combinator Challenge
+Child Combinator
+Selects all elements on the right that are direct children of the selector on the left. These selectors are separated by >.
+css
+
+parent > direct_children {
+    /* All direct children of the parent */
+}
+
+div > p {
+    /* All direct children <p> of <div> */
+}
+
+.container > img {
+    /* All direct children <img> of the class "container" */
+}
+Child Combinator Challenge
+Try setting a text color to all <p> tags that are direct children of the class "container".Solution to the Child Combinator Challenge
+Adjacent Sibling Combinator
+Selects all elements on the right that are adjacent to the selector on the left. These selectors are separated by +.
+css
+
+element + adjacent {
+    /* Adjacent elements */
+}
+
+div + p {
+    /* All <p> adjacent to <div> */
+}
+
+.container + img {
+    /* All <img> adjacent to the class "container" */
+}
+Adjacent means they share the same parent and are placed immediately after another element. For example, in the following code, <div> is adjacent to <h1>, and <p> is adjacent to <div>. However, <h1> is not adjacent to <div>, and <div> is not adjacent to <p>.
+html
+
+<!-- HTML File -->
+<h1>I'm a header</h1>
+<div>I'm a div</div>
+<p>I'm a paragraph</p>
+Adjacent Sibling Combinator Challenge
+Try setting a text color to all <p> tags that are adjacent to <div> tags.Solution to the Adjacent Sibling Combinator Challenge
+General Sibling Combinator
+Selects all elements on the right that are siblings of the selector on the left. These selectors are separated by ~.
+css
+
+element ~ siblings {
+    /* Sibling elements */
+}
+
+div ~ p {
+    /* All <p> siblings of <div> */
+}
+
+.container ~ img {
+    /* All <img> siblings of the class "container" */
+}
+Siblings share the same parent and are placed after one another. For example, in the following code, <div> and <p> are siblings of <h1>, but <h1> is not a sibling of <div>, and <div> is not a sibling of <p>.
+html
+
+<!-- HTML File -->
+<h1>I'm a header</h1>
+<div>I'm a div</div>
+<p>I'm a paragraph</p>
+
+
+
+
+
 
 <br>
 <br>
