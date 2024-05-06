@@ -994,14 +994,100 @@ selector :: pseudo-element {
   - **::first-letter**: Adds styles to the first letter of the text in any element.
     - [Example](https://codi.link/PHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0K%7COjpmaXJzdC1sZXR0ZXJ7DQogIGNvbG9yOiByZWQ7DQp9DQo=%7C)
 
-
-
-
-
 <br>
 <br>
 
 ## Cascading and specificity in CSS
+At some point, when you're creating a website, you might encounter issues with styles, such as:
+
+  - Why isn't the color I'm applying taking effect?
+  - Why is this element behaving differently?
+
+The issue is likely related to cascade or specificity.
+
+<br>
+
+### What is CSS Cascade?
+The cascade is the concept that determines which styles override others, prioritizing those that appear later in the code. Remember that CSS stands for Cascading Style Sheets.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/css-cascade.png?raw=true" width= "75%" alt="CSS Cascade">
+</p>
+
+
+Look at the following code and identify the text color for the ``<h1>`` tag:
+```
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+```
+The ``<h1>`` tag will have ``blue`` text because it's declared later in the code. This applies to any CSS property that is repeated elsewhere earlier in the code.
+
+Example of CSS Cascade: [here](https://codi.link/PGgxPkNhc2NhZGE8L2gxPg==%7CaDEgew0KICBjb2xvcjogcmVkOw0KfQ0KDQpoMSB7DQogIGNvbG9yOiBibHVlOw0KfQ==%7C)
+
+However, this happens when the **specificity** of a CSS rule has the same value. But what is specificity?
+
+<br>
+
+### What is CSS Specificity?
+Specificity is the value assigned to a CSS rule indicating how specific the style is, allowing browsers to determine which styles override others, regardless of where they are in the code. The style with higher specificity will be applied.
+
+<br>
+
+### Types of Specificity in CSS
+There are six types of specificity with their corresponding values, where X is the number of styles containing them. Take a look at this image:
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/specificity.png?raw=true" width= "75%" alt="Specificity">
+</p>
+
+<br>
+
+### Values with Higher Specificity
+The reserved word !important is a value for any CSS property that provides a specificity of 10,000, causing it to take precedence over other styles. This is considered a bad practice and should not be used.
+```
+h1 {
+    color: red !important;
+}
+```
+
+Example of !important [here](https://codi.link/PGgxPkVzcGVjaWZpY2lkYWQ8L2gxPg0K%7CaDEgew0KICBjb2xvcjogcmVkOw0KfQ0KDQpoMSB7DQogIGNvbG9yOiBncmVlbiAhaW1wb3J0YW50Ow0KfQ0KDQpoMSB7DQogIGNvbG9yOiBibHVlOw0KfQ0KDQpoMSB7DQogIGNvbG9yOiBwYXBheWF3aGlwOw0KfQ0K%7C)
+
+<br>
+
+### Inline Styles
+Inline styles are CSS properties written directly in HTML using the style attribute within any tag. This is also a bad practice and should be avoided.
+```
+<h1 style="color: blue;">Specificity</h1>
+```
+
+Example of Inline Styles [here](https://codi.link/PGgxIHN0eWxlPSJjb2xvcjogYmx1ZTsiPkVzcGVjaWZpY2lkYWQ8L2gxPg0K%7CaDEgew0KICBjb2xvcjogcmVkOw0KfQ0KDQpoMSB7DQogIGNvbG9yOiBncmVlbjsNCn0NCg0K%7C)
+
+<br>
+
+### Specificity in Selectors
+Since you're familiar with selectors, you know that ID selectors are more specific than classes, attributes, and pseudo-classes. The latter are more specific than elements and pseudo-elements. The universal selector has a specificity of zero.
+
+In a project, you should avoid using !important and inline styles, focusing solely on the specificity of selectors. However, keep in mind that combinator selectors add up the specificity of each basic selector to obtain the total specificity of the CSS rule.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/specificity-selectors.png?raw=true" width= "75%" alt="Specificity selectors">
+</p>
+
+Calculating Specificity in Combinator Selectors
+If you're using Visual Studio Code, hovering over a selector will show the total specificity. Specificity Calculator is a website where you can calculate specificity.
+
+
+
+
+
+
+
+
 
 <br>
 <br>
