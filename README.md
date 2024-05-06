@@ -920,6 +920,83 @@ Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+
 <br>
 
 ## Selectors types: pseudoclasses and pseudoelements
+There are other types of selectors, besides basic and combinator selectors, capable of changing a state or adding something extra to the element. These are called pseudo-classes and pseudo-elements.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/pseudoclasses-pseudoelements.png?raw=true" width= "75%" alt="Pseudo-clases and pseudo-elements">
+</p>
+
+<br>
+
+### What Are Pseudo-classes?
+A pseudo-class defines the style for a special state of an element.
+
+Index of Standard Pseudo-classes: [here](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes#indice_de_las_pseudo-clases_est%C3%A1ndar)
+
+Learn more about pseudo-classes [here](https://css-tricks.com/pseudo-class-selectors/)
+
+<br>
+
+### Syntax
+```
+selector : pseudo-class { 
+    property: value;
+}
+```
+
+### Some pseudo-classes
+  - **:hover**: Represents the state when the cursor is hovering over the element.      
+    - [Example](https://codi.link/PGRpdj5TZcOxw6FsYW1lPC9kaXY+%7CZGl2IHsNCiAgZm9udC1zaXplOiAzcmVtOw0KICBjdXJzb3I6IHBvaW50ZXI7DQp9DQoNCmRpdjpob3ZlciB7DQogIGNvbG9yOiByZWQ7DQp9%7C)
+  
+  - **:active**: Represents the state of an element that is being interacted with (like when a button is clicked). 
+    - [Example](https://codi.link/PGEgaHJlZj0iIyI+Q2xpY2tlYW1lPC9hPg==%7CYSB7DQogIGZvbnQtc2l6ZTogM3JlbTsNCn0NCg0KYTpsaW5rIHsNCiAgY29sb3I6IHJlZDsNCn0=%7C)
+
+  - **:visited**: Represents the state of a link that has already been visited.
+    - [Example](https://codi.link/PGEgaHJlZj0iIyI+Q2xpY2tlYW1lPC9hPg==%7CYSB7DQogIGZvbnQtc2l6ZTogM3JlbTsNCn0NCg0KYTp2aXNpdGVkIHsNCiAgY29sb3I6IHJlZDsNCn0=%7C)
+
+  - **:not()**: Represents the state when the specified selectors do not match.
+    - [Example](https://codi.link/PGRpdj5BenVsPC9kaXY+DQo8ZGl2PkF6dWw8L2Rpdj4NCjxkaXYgY2xhc3M9Im5lZ3JvIj5OZWdybzwvZGl2Pg0KPGRpdj5BenVsPC9kaXY+DQo8ZGl2PkF6dWw8L2Rpdj4=%7CZGl2IHsNCiAgZm9udC1zaXplOiAzcmVtOw0KfQ0KDQpkaXY6bm90KC5uZWdybykgew0KICBjb2xvcjogYmx1ZTsNCn0=%7C)
+
+  - **:nth-child()**: Represents the state where child elements match according to the specified value.
+    - Key terms:
+      - odd: The child elements in odd positions.
+      - even: The child elements in even positions.
+    - Mathematical formula: An + B, where A and B are integers.
+    - [Example](https://codi.link/PGRpdj4xIE5lZ3JvPC9kaXY+DQo8ZGl2PjIgQXp1bDwvZGl2Pg0KPGRpdj4zIE5lZ3JvPC9kaXY+DQo8ZGl2PjQgTmVncm88L2Rpdj4NCjxkaXY+NSBOZWdybzwvZGl2Pg==%7CZGl2IHsNCiAgZm9udC1zaXplOiAzcmVtOw0KfQ0KDQpkaXY6bnRoLWNoaWxkKDIpIHsNCiAgY29sb3I6IGJsdWU7DQp9%7C)
+
+<br>
+
+### What Are Pseudo-elements?
+A pseudo-element defines the style of a specific part of an element.
+
+List of Pseudo-elements: [here](https://developer.mozilla.org/es/docs/web/css/pseudo-elements#lista_de_pseudoelementos)
+
+Learn more about pseudo-elements [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+
+<br>
+
+### Syntax
+```
+selector :: pseudo-element { 
+    property: value;
+}
+```
+<br>
+
+### Some pseudo-elements
+
+  - **::before**: Adds content before the element. The content is added using the CSS content property.
+    - [Example](https://codi.link/PGgxPlTDrXR1bG88L2gxPg0KPGgyPlN1YnTDrXR1bG9zPC9oMj4NCjxoMj5TdWJ0w610dWxvczwvaDI+DQo8aDI+U3VidMOtdHVsb3M8L2gyPg0KPGgyPlN1YnTDrXR1bG9zPC9oMj4NCjxoMj5TdWJ0w610dWxvczwvaDI+DQo=%7CaDI6YmVmb3JlIHsNCiAgY29udGVudDogIiAqICI7DQogIGNvbG9yOiByZWQ7DQp9%7C)
+
+  - **::after**: Adds content after the element. The content is added using the CSS content property.
+    - [Example](https://codi.link/PCEtLSBOYXZiYXIgaW1wcm92aXNhZGEgLS0+DQo8bmF2Pg0KICA8dWw+DQogICAgPGxpPkhvbWU8L2xpPg0KICAgIDxsaT5EZXN0YWNhZG9zPC9saT4NCiAgICA8bGk+RWxlbWVudG9zPC9saT4NCiAgICA8bGk+Q2xhc2VzPC9saT4NCiAgICA8bGk+TcOhcy4uLjwvbGk+DQogIDwvdWw+DQo8L25hdj4NCg==%7CbmF2IHVsIHsNCiAgbGlzdC1zdHlsZTogbm9uZTsNCiAgZGlzcGxheTogZmxleDsNCiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7DQogIGN1cnNvcjogcG9pbnRlcjsNCn0NCg0KbmF2IHVsIGxpOjphZnRlciB7DQogIGNvbnRlbnQ6ICJ8IjsNCiAgbWFyZ2luOiAxcmVtOw0KICBjb2xvcjogcmVkOw0KfQ==%7C)
+
+  - **::first-letter**: Adds styles to the first letter of the text in any element.
+    - [Example](https://codi.link/PHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0K%7COjpmaXJzdC1sZXR0ZXJ7DQogIGNvbG9yOiByZWQ7DQp9DQo=%7C)
+
+
+
+
 
 <br>
 <br>
