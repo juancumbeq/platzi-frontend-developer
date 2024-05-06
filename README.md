@@ -1048,7 +1048,7 @@ There are six types of specificity with their corresponding values, where X is t
 <br>
 
 ### Values with Higher Specificity
-The reserved word !important is a value for any CSS property that provides a specificity of 10,000, causing it to take precedence over other styles. This is considered a bad practice and should not be used.
+The reserved word ``!important`` is a value for any CSS property that provides a specificity of 10,000, causing it to take precedence over other styles. This is considered a bad practice and should not be used.
 ```
 h1 {
     color: red !important;
@@ -1072,57 +1072,94 @@ Example of Inline Styles [here](https://codi.link/PGgxIHN0eWxlPSJjb2xvcjogYmx1ZT
 ### Specificity in Selectors
 Since you're familiar with selectors, you know that ID selectors are more specific than classes, attributes, and pseudo-classes. The latter are more specific than elements and pseudo-elements. The universal selector has a specificity of zero.
 
-In a project, you should avoid using !important and inline styles, focusing solely on the specificity of selectors. However, keep in mind that combinator selectors add up the specificity of each basic selector to obtain the total specificity of the CSS rule.
+In a project, you should avoid using ``!important`` and inline styles, focusing solely on the specificity of selectors. However, keep in mind that combinator selectors add up the specificity of each basic selector to obtain the total specificity of the CSS rule.
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/specificity-selectors.png?raw=true" width= "75%" alt="Specificity selectors">
 </p>
 
-Calculating Specificity in Combinator Selectors
-If you're using Visual Studio Code, hovering over a selector will show the total specificity. Specificity Calculator is a website where you can calculate specificity.
+If you're using **Visual Studio Code**, hovering over a selector will show the total specificity. Specificity Calculator is a website where you can calculate specificity.
 
+In the other hand, there is a [specificity calculator](https://specificity.keegan.st/)
+<br>
+<br>
 
+## Most used Display Types: Block, Inline and Inline-block
+The ``display`` property sets the type of visual representation for HTML elements without affecting the normal flow of elements.
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/display.png?raw=true" width= "75%" alt="Display">
+</p>
 
+Some tags have a default display type, such as ``<div>`` which has ``display: block``, ``<span>`` which has ``display: inline``, and ``<button>`` which has ``display: inline-block``.
 
+<br>
 
+### Block Display
+``display: block`` means that an element will occupy the entire available width by default, and the next element will be placed below it.
 
+It's possible to add **width** and **height** measurements to these elements.
 
+You can also add all the properties of the box model (don't worry, we'll cover this concept later).
+
+Example of Block Display [here](https://codi.link/PGRpdj5Tb3kgZGlzcGxheSBibG9jazwvZGl2Pg0KPGRpdj5Tb3kgZGlzcGxheSBibG9jazwvZGl2Pg0KPGRpdiBjbGFzcz0iY29uX21lZGlkYXMiPlNveSBkaXNwbGF5IGJsb2NrPC9kaXY+DQoNCg==%7CLyogUXVpdGEgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0KZGl2ew0KICBiYWNrZ3JvdW5kLWNvbG9yOiBhcXVhOw0KICAvKiBtYXJnaW46IDEwcHg7ICovDQogIC8qIHBhZGRpbmc6IDEwcHg7ICovDQp9DQoNCi5jb25fbWVkaWRhcyB7DQogIC8qIHdpZHRoOiAyMDBweDsgKi8NCiAgLyogaGVpZ2h0OiAyMDBweDsgKi8NCn0NCg0KLyogSWdub3JhIGVzdG9zIGVzdGlsb3MsIHBvciBhaG9yYSAqLw0KKiB7DQogIGZvbnQtc2l6ZTogMS4ycmVtOw0KICBtYXJnaW46IDA7DQp9DQoNCg0KDQo=%7C)
+
+<br>
+
+### Inline Display
+``display: inline`` means that an element will occupy only the space of its content, and the next element will be placed to its right.
+
+You can't add **width** and **height** measurements to these elements.
+
+Additionally, you can't apply all the box model properties; only the margin property on the horizontal axis works (again, we'll cover this concept later).
+
+Example of Inline Display [here](https://codi.link/PHNwYW4+U295IGRpc3BsYXkgaW5saW5lPC9zcGFuPg0KPHNwYW4+U295IGRpc3BsYXkgaW5saW5lPC9zcGFuPg0KPHNwYW4+U295IGRpc3BsYXkgaW5saW5lPC9zcGFuPg0KPHNwYW4+U295IGRpc3BsYXkgaW5saW5lPC9zcGFuPg0KPHNwYW4gY2xhc3M9ImNvbl9tZWRpZGFzIj5Tb3kgZGlzcGxheSBpbmxpbmU8L3NwYW4+DQoNCg==%7CLyogUXVpdGEgeSBhZ3JlZ2EgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0Kc3BhbnsNCiAgYmFja2dyb3VuZC1jb2xvcjogYXF1YTsNCiAgLyogbWFyZ2luOiAyMHB4OyAqLw0KICAvKiBwYWRkaW5nOiAyMHB4OyAqLw0KfQ0KDQouY29uX21lZGlkYXMgew0KICAvKiB3aWR0aDogMjAwcHg7ICovDQogIC8qIGhlaWdodDogMjAwcHg7ICovDQp9DQoNCi8qIElnbm9yYSBlc3RvcyBlc3RpbG9zLCBwb3IgYWhvcmEgKi8NCiogew0KICBmb250LXNpemU6IDEuMnJlbTsNCiAgbWFyZ2luOiAwOw0KfQ0KDQoNCg0K%7C)
+
+<br>
+
+### Inline-Block Display
+``display: inline-block`` combines the advantages of block—being able to set measurements and apply box model properties correctly—with the advantages of inline, allowing elements to be positioned side by side in the same line.
+
+If an element exceeds the total content width, it moves to the next line below.
+
+Example of Inline-Block Display [here](https://codi.link/PGJ1dHRvbj5Tb3kgZGlzcGxheSBpbmxpbmUtYmxvY2s8L2J1dHRvbj4NCjxidXR0b24+U295IGRpc3BsYXkgaW5saW5lLWJsb2NrPC9idXR0b24+DQo8YnV0dG9uPlNveSBkaXNwbGF5IGlubGluZS1ibG9jazwvYnV0dG9uPg0KPGJ1dHRvbj5Tb3kgZGlzcGxheSBpbmxpbmUtYmxvY2s8L2J1dHRvbj4NCjxidXR0b24gY2xhc3M9ImNvbl9tZWRpZGFzIj5Tb3kgZGlzcGxheSBpbmxpbmUtYmxvY2s8L2J1dHRvbj4NCg0K%7CLyogUXVpdGEgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0KYnV0dG9uew0KICAvKiBtYXJnaW46IDEwcHg7ICovDQogIC8qIHBhZGRpbmc6IDEwcHg7ICovDQp9DQoNCi5jb25fbWVkaWRhcyB7DQogIC8qIHdpZHRoOiAzMDBweDsgKi8NCiAgLyogaGVpZ2h0OiAxMDBweDsgKi8NCn0NCg0KLyogSWdub3JhIGVzdG9zIGVzdGlsb3MsIHBvciBhaG9yYSAqLw0KKiB7DQogIGZvbnQtc2l6ZTogMS4xcmVtOw0KICBtYXJnaW46IDA7DQp9DQoNCg0KDQo=%7C)
+
+<br>
+
+### No Display (None)
+``display: none`` disables the display of an element, making it as if the element doesn't exist.
+
+Example of Display None [here](https://codi.link/PGRpdj48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2IGNsYXNzPSJkZXNhcGFyZWNlciI+DQogIEVuIG1pIHNpZ3VpZW50ZSB0cnVjbywgwqF2b3kgYSBkZXNhcGFyZWNlciENCjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PC9kaXY+DQo=%7CLyogUXVpdGEgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0KLmRlc2FwYXJlY2Vyew0KICAvKiBkaXNwbGF5OiBub25lOyAqLw0KICBiYWNrZ3JvdW5kLWNvbG9yOiBjb3JuZmxvd2VyYmx1ZTsNCiAgDQp9DQoNCi8qIElnbm9yYSBlc3RvcyBlc3RpbG9zLCBwb3IgYWhvcmEgKi8NCiogew0KICBib3gtc2l6aW5nOiBib3JkZXItYm94Ow0KICBmb250LXNpemU6IDEuMXJlbTsNCiAgbWFyZ2luOiAwOw0KfQ0KDQpib2R5ew0KICBkaXNwbGF5OiBmbGV4Ow0KfQ0KDQpkaXZ7DQogIGJhY2tncm91bmQtY29sb3I6IGNvcmFsOw0KICB3aWR0aDogMTIwcHg7DQogIGhlaWdodDogMTIwcHg7DQogIGZvbnQtd2VpZ2h0OiA4MDA7DQogIHBhZGRpbmc6IDhweDsNCn0NCg0KDQoNCg==%7C)
 
 <br>
 <br>
 
-## Most used display types: block, inline and inline-block
+## Most used Display Types: Flexbox and CSS grid
 
 <br>
 <br>
 
-## Most used display types: flexbox and CSS grid
+## Box Model
 
 <br>
 <br>
 
-## Box model
+## Image Collapse
 
 <br>
 <br>
 
-## Image collapse
+## CSS Positioning
 
 <br>
 <br>
 
-## CSS positioning
+## Z-index and the Stacking Context
 
 <br>
 <br>
 
-## Z-index and the stacking context
-
-<br>
-<br>
-
-## Most used CSS properties and values
+## Most used CSS Properties and Values
 
 <br>
 <br>
