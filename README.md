@@ -1543,8 +1543,52 @@ As you can see in the image, the element with the class "yellow" has a higher ``
 <br>
 <br>
 
-## Most used CSS Properties and Values
+## [Most used CSS Properties and Values]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/propiedades-mas-usadas.html))
+The most commonly used CSS properties are as follows, grouped into typical sections, some of which we are already familiar with:
 
+  - Display
+  - Margin
+  - Padding
+  - Border
+  - Width
+  - Height
+  - Color
+  - Background
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/common-css-properties.png.png?raw=true" width= "75%" alt="Common CSS properties">
+</p>  
+
+Also, if you'd like to explore all existing CSS properties, you can visit the [CSS Reference website](https://cssreference.io/).
+
+<br>
+
+### Text Properties
+The properties for manipulating text and typography are:
+
+  - **font-size**: Sets the font size.
+  - **font-weight**: Sets the text's boldness, with values from 100 to 900 in intervals of 100; 100 being thin and 900 being bold.
+  - **font-family**: Sets the font type.
+text-align: Sets the text alignment: right, left, center, or justify.
+  - **color**: Sets the text color.
+
+<br>
+
+### Rounded Borders
+The property that sets rounded borders is ``border-radius``.
+
+[Example of Rounded Borders](https://codi.link/PGRpdiBjbGFzcz0iYm9yZGVyIj48L2Rpdj4NCjxkaXYgY2xhc3M9ImNpcmNsZSI+PC9kaXY+%7CZGl2IHsNCiAgd2lkdGg6IDIwMHB4Ow0KICBoZWlnaHQ6IDIwMHB4Ow0KICBiYWNrZ3JvdW5kLWNvbG9yOiBicm93bjsNCiAgbWFyZ2luOiAyMHB4Ow0KICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7DQp9DQoNCi5ib3JkZXJ7DQogIGJvcmRlci1yYWRpdXM6IDM1cHg7DQp9DQoNCi5jaXJjbGV7DQogIGJvcmRlci1yYWRpdXM6IDUwJTsNCn0NCg0KDQo=%7C)
+
+<br>
+
+### Challenge
+Try to create a business card. You can base your design on the work of your classmates in the "Contributions" section.
+
+You can use the following code as a reference.
+
+[Example](https://codi.link/PHNlY3Rpb24+DQogIDxkaXYgY2xhc3M9ImNhcmQiPg0KICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8xMDU2MjUxL3BleGVscy1waG90by0xMDU2MjUxLmpwZWc/YXV0bz1jb21wcmVzcyZjcz10aW55c3JnYiZoPTY1MCZ3PTk0MCIgYWx0PSJjYXQiPg0KICAgIDxwPkNhdDogTWltaTwvcD4NCiAgICA8cD5Mb3ZlPC9wPg0KICA8L2Rpdj4NCjwvc2VjdGlvbj4=%7Cc2VjdGlvbiB7DQogIHdpZHRoOiAxMDAlOw0KICBkaXNwbGF5OiBmbGV4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCn0NCg0KLmNhcmQgew0KICB3aWR0aDogMzAwcHg7DQogIGhlaWdodDogMzAwcHg7DQogIGJhY2tncm91bmQ6IHBhcGF5YXdoaXA7DQogIGJvcmRlci1yYWRpdXM6IDIwcHg7DQogIG92ZXJmbG93OiBoaWRkZW47DQp9DQoNCi5jYXJkIGltZyB7DQogIHdpZHRoOiAxMDAlOw0KfQ0KDQouY2FyZCBwIHsNCiAgdGV4dC1hbGlnbjogY2VudGVyOw0KfQ0KDQouY2FyZCBwOm50aC1jaGlsZCgzKSB7DQogIGNvbG9yOiBUdXJxdW9pc2U7DQp9%7C)
+
+[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/propiedades-mas-usadas.html))
 <br>
 <br>
 <br>
