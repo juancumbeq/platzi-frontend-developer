@@ -1169,7 +1169,7 @@ Grid involves arranging child elements along two axes, like a grid or table. The
 The box model consists of four elements: margin, border, padding, and content.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/box-model.png?raw=true" width= "75%" alt="box model">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/box-model.png?raw=true" width= "50%" alt="box model">
 </p>
 
 If you open your browser's developer tools and hover over an HTML element, you'll see a view similar to the previous image in the style section—this is the box model of the selected element.
@@ -1325,6 +1325,9 @@ For example, with the styles defined earlier, let's set this new property.
 
 The total size of the element will be ``150px`` on both axes, where the content is calculated to ensure the total is what’s specified in **width** and **height**. If you inspect this element in the developer tools, it will show its total size as 150x150 and the content as ``90x90``.
 
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/measurement-example-2.png?raw=true" width= "75%" alt="Measurement example 2">
+</p>
 
 In conclusion, set the total size of the element with width and height, along with box-sizing: border-box, so that the content adjusts to the container's needs.
 
