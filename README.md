@@ -1742,6 +1742,33 @@ Use the following example to visualize how styles change depending on the screen
 
 # CSS ARCHITECTURE
 ## What are the CSS architectures? What are they used for?
+CSS architectures involve managing CSS code with a series of rules and patterns to facilitate readability, maintainability, and scalability.
+
+The code you've worked with so far doesn't resemble reality, as you will likely handle several hundred or thousands of lines of code. CSS architectures aim to maintain a standard in the code so that anyone can add or remove functionality without much effort.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/css-architecture.png?raw=true" width= "75%" alt="CSS architecture">
+</p>
+
+<br>
+
+### Goals of CSS Architectures
+The goals of CSS architectures are:
+
+  - **Predictable**: The code should be as simple as possible.
+  - **Reusable**: The code should be as non-redundant as possible to avoid issues with specificity.
+  - **Maintainable**: The code should be easy to manage for adding or removing styles.
+  - **Scalable**: The code should be able to grow as needed.
+
+<br>
+
+### Best Practices for CSS Architectures
+The best practices for CSS architectures are:
+
+  - **Guidelines and Standards**: Define rules within your workgroup about how the code should be written.
+  - **Documentation**: Establish a brief explanation of the code and guidelines, which is especially useful for new team members to get familiar with what they should do.
+  - **Components**: Define each element of your page in a componentized manner, handling them in parts, and then combine them into a whole.
+
 
 ## OOCSS, BEM, SMACCSS, ITCSS and Atomic Design
 
