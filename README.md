@@ -1769,8 +1769,10 @@ The best practices for CSS architectures are:
   - **Documentation**: Establish a brief explanation of the code and guidelines, which is especially useful for new team members to get familiar with what they should do.
   - **Components**: Define each element of your page in a componentized manner, handling them in parts, and then combine them into a whole.
 
+<br>
+<br>
 
-## OOCSS, BEM, SMACCSS, ITCSS and Atomic Design
+## [OOCSS, BEM, SMACCSS, ITCSS and Atomic Design]()
 Ahora que ya conoces qué implica trabajar con una arquitectura de CSS, estudiemos las más comunes cuando se manipula código CSS.
 
 <br>
@@ -1811,11 +1813,11 @@ You can learn more about this architecture in the following article:
 ### What is the Scalable and Modular Architecture for CSS?
 The **SMACSS (Scalable and Modular Architecture for CSS)** architecture defines the order of components that will be placed in folders. Combining these components results in a styled web page.
 
-  - Base: Basic elements like buttons, headings, links.
-  - Layout: Page structure, related to Responsive Design.
-  - Modules: Elements that contain the base elements.
-  - State: Styles related to element behavior, often tied to pseudo-classes and pseudo-elements.
-  - Themes: A set of styles that define your web page's look.
+  - **Base**: Basic elements like buttons, headings, links.
+  - **Layout**: Page structure, related to Responsive Design.
+  - **Modules**: Elements that contain the base elements.
+  - **State**: Styles related to element behavior, often tied to pseudo-classes and pseudo-elements.
+  - **Themes**: A set of styles that define your web page's look.
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/smacss.png?raw=true" width= "75%" alt="SMACSS">
@@ -1835,11 +1837,11 @@ The **ITCSS (Inverted Triangle CSS)** architecture involves separating project f
 ### What is Atomic Design?
 The Atomic Design architecture is also one of the most widely used today. It involves managing elements as a minimum structure, where the combination of several of these results in the styles for a web page. It is based on the minimal structure of matter: atoms.
 
-  - Atoms: The minimum structure, like buttons, links, headings, etc.
-  - Molecules: A combination of atoms.
-  - Organisms: A combination of molecules.
-  - Templates: A combination of organisms.
-  - Pages: A combination of templates.
+  - **Atoms**: The minimum structure, like buttons, links, headings, etc.
+  - **Molecules**: A combination of atoms.
+  - **Organisms**: A combination of molecules.
+  - **Templates**: A combination of organisms.
+  - **Pages**: A combination of templates.
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/atomic-design.png?raw=true" width= "75%" alt="Atomic Design">
