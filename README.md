@@ -1741,7 +1741,7 @@ Use the following example to visualize how styles change depending on the screen
 <br>
 
 # CSS ARCHITECTURE
-## What are the CSS architectures? What are they used for?
+## [What are the CSS architectures? What are they used for?]()
 CSS architectures involve managing CSS code with a series of rules and patterns to facilitate readability, maintainability, and scalability.
 
 The code you've worked with so far doesn't resemble reality, as you will likely handle several hundred or thousands of lines of code. CSS architectures aim to maintain a standard in the code so that anyone can add or remove functionality without much effort.
@@ -1771,6 +1771,79 @@ The best practices for CSS architectures are:
 
 
 ## OOCSS, BEM, SMACCSS, ITCSS and Atomic Design
+Ahora que ya conoces qué implica trabajar con una arquitectura de CSS, estudiemos las más comunes cuando se manipula código CSS.
+
+<br>
+
+### Qué es CSS Orientado a Objetos
+Now that you understand what it means to work with a CSS architecture, let's explore the most common ones when working with CSS code.
+
+<br>
+
+### What is Object-Oriented CSS?
+The **OOCSS (Object-Oriented CSS)** architecture involves separating the main structure from the skin or mask.
+
+In other words, it involves having objects that are the main structures. These objects are wrapped in a skin that can change while keeping the structure intact.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/occss.png?raw=true" width= "75%" alt="OCCSS">
+</p>
+
+<br>
+
+### What is BEM: Block, Element, and Modifier?
+The **BEM (Block-Element-Modifier)** architecture is one of the most widely used today. It involves managing elements through classes defined by blocks, elements, and modifiers.
+
+  - **Block**: The main structure that contains multiple elements.
+  - **Element**: The HTML element referenced by the container.
+  - **Modifier**: A specific style for the element, such as a button with a different color, often related to specificity.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/bem.png?raw=true" width= "75%" alt="BEM">
+</p>
+
+You can learn more about this architecture in the following article:
+
+[BEM Guide for CSS | Falcon 9 Rocket by SpaceX](https://platzi.com/blog/bem/)
+
+<br>
+
+### What is the Scalable and Modular Architecture for CSS?
+The **SMACSS (Scalable and Modular Architecture for CSS)** architecture defines the order of components that will be placed in folders. Combining these components results in a styled web page.
+
+  - Base: Basic elements like buttons, headings, links.
+  - Layout: Page structure, related to Responsive Design.
+  - Modules: Elements that contain the base elements.
+  - State: Styles related to element behavior, often tied to pseudo-classes and pseudo-elements.
+  - Themes: A set of styles that define your web page's look.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/smacss.png?raw=true" width= "75%" alt="SMACSS">
+</p>
+
+<br>
+
+### What is the Inverted Triangle CSS Architecture?
+The **ITCSS (Inverted Triangle CSS)** architecture involves separating project files by adjustments, tools, elements, and other categories. This is done to manage specificity, clarity, and scale.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/itcss.png?raw=true" width= "75%" alt="ITCSS">
+</p>
+
+<br>
+
+### What is Atomic Design?
+The Atomic Design architecture is also one of the most widely used today. It involves managing elements as a minimum structure, where the combination of several of these results in the styles for a web page. It is based on the minimal structure of matter: atoms.
+
+  - Atoms: The minimum structure, like buttons, links, headings, etc.
+  - Molecules: A combination of atoms.
+  - Organisms: A combination of molecules.
+  - Templates: A combination of organisms.
+  - Pages: A combination of templates.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/atomic-design.png?raw=true" width= "75%" alt="Atomic Design">
+</p>
 
 <br>
 <br>
