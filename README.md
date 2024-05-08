@@ -1595,7 +1595,7 @@ You can use the following code as a reference.
 <br>
 
 # RESPONSIVE DESIGN
-## Measurement units
+## [Measurement units]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
 Units of measurement determine the length for a specific element or typography. There are two types of measurements: absolute and relative.
 
 <p align="center">
@@ -1641,6 +1641,7 @@ The ``em`` unit depends on the containing element's size. If an element has a fo
 The ``rem`` unit depends on the root element. The font-size of the root element is usually ``16px``, so ``2rem`` is equivalent to ``32px``, and so on.
 
 [Example of em Measurement](https://codi.link/PGRpdiBjbGFzcz0ibml2ZWwxIj4NCiAgPHA+TGV0cmEgZGUgMjBweDwvcD4NCiAgPGRpdiBjbGFzcz0ibml2ZWwyIj4NCiAgICA8cD5MZXRyYSBkZSAyMHB4PC9wPg0KICAgIDxkaXYgY2xhc3M9Im5pdmVsMyI+DQogICAgICA8cD5MZXRyYSBkZSA0MHB4PC9wPg0KICAgICAgPGRpdiBjbGFzcz0ibml2ZWw0Ij4NCiAgICAgICAgPHA+TGV0cmEgZGUgODBweDwvcD4NCiAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICA8L2Rpdj4NCjwvZGl2Pg==%7CKiB7DQogIG1hcmdpbjogMDsNCn0NCg0KLm5pdmVsMSB7DQogIC8qIFB1ZWRlcyBjYW1iaWFyIGVzdGUgdmFsb3IgKi8NCiAgZm9udC1zaXplOiAyMHB4Ow0KfQ0KDQoubml2ZWwyIHsNCiAgLyogdGFtYcOxbyA9IDIwcHggKiAxID0gMjBweCAqLw0KICBmb250LXNpemU6IDFlbTsNCn0NCg0KLm5pdmVsMyB7DQogIC8qIHRhbWHDsW8gPSAyMHB4ICogMiA9IDQwcHggKi8NCiAgZm9udC1zaXplOiAyZW07DQp9DQoNCi5uaXZlbDQgew0KICAvKiB0YW1hw7FvID0gNDBweCAqIDIgPSA4MHB4ICovDQogIGZvbnQtc2l6ZTogMmVtOw0KfQ0KDQoNCg==%7C)
+
 In developer tools, you can view the font size in pixels.
 
 <p align="center">
@@ -1676,17 +1677,70 @@ html {
 
 With this change, 1rem will equal 10px, allowing you to use it without issue, and your text will adapt to user preferences.
 
+[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
+
 <br>
 <br>
 
-## Responsive design
+## [Responsive Design]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/diseño-responsivo.html))
+Responsive Design is a set of tools that ensure your site looks good across various screen sizes, including adjustments for images, typography, page internationalization, and more.
+
+Currently, most websites are accessed from mobile devices, so ensuring that your site is responsive on any device is crucial for optimizing revenue.
+
+<br>
+
+### What Are Media Queries?
+Media queries are CSS rules that define different behaviors or styles within a certain range of screen sizes. This helps set the layout of the website for different screen types: desktops, tablets, and mobile devices.
+
+There are two types of media queries:
+
+  - ``max-width / max-height``: Sets a maximum range for certain behaviors.
+  - ``min-width / min-height``: Sets a minimum range for certain behaviors.
+
+These values function similarly to conditionals; as long as the condition is met, certain styles will be applied.
+
+<br>
+
+### Structure of a Media Query
+The structure of a media query begins with ``@media``, followed by the type of media query that establishes a range, with the CSS rules enclosed within that range.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/media-queries.png?raw=true" width= "75%" alt="Media queries">
+</p>
+
+```
+@media (max-width: 750px) {
+    div {
+        color: red;
+    }
+    p {
+        background-color: red;
+    }
+}
+```
+
+<br>
+
+### Developer Tools for Media Queries
+To check if the changes are applied correctly, developer tools are very helpful.
+
+Open your browser's developer tools and click on "Toggle device tool." This allows you to manipulate the screen size and see at what pixel widths certain styles are applied.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/dev-tool-media-queries.png?raw=true" width= "75%" alt="Media queries">
+</p>
+
+Use the following example to visualize how styles change depending on the screen's length. You can examine the media query in the code snippet. Although the example only changes the color of two elements, any property can be modified, so feel free to experiment.
+
+[Example of Media Queries](https://codi.link/PGRpdiBjbGFzcz0iY2FyZDEiPjwvZGl2Pg0KPGRpdiBjbGFzcz0iY2FyZDIiPjwvZGl2Pg0KDQo=%7CKiB7DQogIG1hcmdpbjogMDsNCiAgcGFkZGluZzogMDsNCiAgYm94LXNpemluZzogYm9yZGVyLWJveDsNCn0NCg0KYm9keSB7DQogIHdpZHRoOiAxMDB2dzsNCiAgaGVpZ2h0OiAxMDB2aDsNCn0NCg0KLmNhcmQxew0KICB3aWR0aDogMTAwJTsNCiAgaGVpZ2h0OiAyNSU7DQogIGJhY2tncm91bmQtY29sb3I6IGJyb3duOw0KfQ0KDQouY2FyZDIgew0KICB3aWR0aDogNTAlOw0KICBoZWlnaHQ6IDc1JTsNCiAgYmFja2dyb3VuZC1jb2xvcjogY2hhcnRyZXVzZTsNCn0NCg0KQG1lZGlhIChtaW4td2lkdGg6IDUwMHB4KXsNCiAgLmNhcmQxIHsNCiAgICAgIGJhY2tncm91bmQtY29sb3I6IGNoYXJ0cmV1c2U7DQogIH0NCg0KICAuY2FyZDIgew0KICAgIGJhY2tncm91bmQtY29sb3I6IGJyb3duOw0KICB9DQp9DQoNCg==%7C)
+
+[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/diseño-responsivo.html))
 
 <br>
 <br>
 <br>
 
 # CSS ARCHITECTURE
-
 ## What are the CSS architectures? What are they used for?
 
 ## OOCSS, BEM, SMACCSS, ITCSS and Atomic Design
@@ -1696,7 +1750,6 @@ With this change, 1rem will equal 10px, allowing you to use it without issue, an
 <br>
 
 # NEXT STEPS
-
 ## CSS for interviews and labor market
 
 <br>
