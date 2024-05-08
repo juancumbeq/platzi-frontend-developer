@@ -1556,8 +1556,8 @@ The most commonly used CSS properties are as follows, grouped into typical secti
   - Background
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/common-css-properties.png.png?raw=true" width= "75%" alt="Common CSS properties">
-</p>  
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/common-css-properties.png?raw=true" width= "75%" alt="Common CSS properties">
+</p>
 
 Also, if you'd like to explore all existing CSS properties, you can visit the [CSS Reference website](https://cssreference.io/).
 
@@ -1589,13 +1589,92 @@ You can use the following code as a reference.
 [Example](https://codi.link/PHNlY3Rpb24+DQogIDxkaXYgY2xhc3M9ImNhcmQiPg0KICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8xMDU2MjUxL3BleGVscy1waG90by0xMDU2MjUxLmpwZWc/YXV0bz1jb21wcmVzcyZjcz10aW55c3JnYiZoPTY1MCZ3PTk0MCIgYWx0PSJjYXQiPg0KICAgIDxwPkNhdDogTWltaTwvcD4NCiAgICA8cD5Mb3ZlPC9wPg0KICA8L2Rpdj4NCjwvc2VjdGlvbj4=%7Cc2VjdGlvbiB7DQogIHdpZHRoOiAxMDAlOw0KICBkaXNwbGF5OiBmbGV4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCn0NCg0KLmNhcmQgew0KICB3aWR0aDogMzAwcHg7DQogIGhlaWdodDogMzAwcHg7DQogIGJhY2tncm91bmQ6IHBhcGF5YXdoaXA7DQogIGJvcmRlci1yYWRpdXM6IDIwcHg7DQogIG92ZXJmbG93OiBoaWRkZW47DQp9DQoNCi5jYXJkIGltZyB7DQogIHdpZHRoOiAxMDAlOw0KfQ0KDQouY2FyZCBwIHsNCiAgdGV4dC1hbGlnbjogY2VudGVyOw0KfQ0KDQouY2FyZCBwOm50aC1jaGlsZCgzKSB7DQogIGNvbG9yOiBUdXJxdW9pc2U7DQp9%7C)
 
 [Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/propiedades-mas-usadas.html))
+
 <br>
 <br>
 <br>
 
 # RESPONSIVE DESIGN
-
 ## Measurement units
+Units of measurement determine the length for a specific element or typography. There are two types of measurements: absolute and relative.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/measurement-units.png?raw=true" width= "75%" alt="Measurement units">
+</p>
+
+<br>
+
+### What are Absolute Measurements?
+Absolute measurements are fixed values, so the measurement does not change. The most commonly used absolute unit is pixels ``(px)``, while others are used less frequently but are still worth knowing.
+
+| Unit | Name                    | Equivalence            |
+|------|-------------------------|------------------------|
+| px   | pixels                  | 1 px = 1/96 in         |
+| cm   | centimeters             | 1 cm = 96/2.54 px      |
+| mm   | milimeters              | 1 mm = 1/10 cm         |
+| Q    | quarters of a milimeter | 1 Q = 1/4 mm           |
+| in   | inches                  | 1 in = 2.54 cm = 96 px |
+| pc   | picas                   | 1 pc = 1/6 in          |
+| pt   | points                  | 1 pt = 1/72 in         |
+
+<br>
+
+### What are Relative Measurements?
+Relative measurements are variable values, so the measurement depends on an external value. These need to be used with caution, as a small change can lead to unexpectedly large sizes.
+
+| Unit | Depends On                                               |
+|------|----------------------------------------------------------|
+| em   | the containing element                                   |
+| rem  | the root element                                         |
+| vm   | 1% of the screen width                                   |
+| vh   | 1% of the height                                         |
+| vmin | 1% of the smallest screen dimension                      |
+| vmax | 1% of the largest screen dimension                       |
+| ch   | the width of the character "0" in the containing element |
+| lh   | the line height of the containing element                |
+
+<br>
+
+### Difference Between rem and em
+The ``em`` unit depends on the containing element's size. If an element has a font-size of ``20px``, then ``1em`` is equivalent to ``20px``, and ``2em`` would be ``40px``, and so on.
+
+The ``rem`` unit depends on the root element. The font-size of the root element is usually ``16px``, so ``2rem`` is equivalent to ``32px``, and so on.
+
+[Example of em Measurement](https://codi.link/PGRpdiBjbGFzcz0ibml2ZWwxIj4NCiAgPHA+TGV0cmEgZGUgMjBweDwvcD4NCiAgPGRpdiBjbGFzcz0ibml2ZWwyIj4NCiAgICA8cD5MZXRyYSBkZSAyMHB4PC9wPg0KICAgIDxkaXYgY2xhc3M9Im5pdmVsMyI+DQogICAgICA8cD5MZXRyYSBkZSA0MHB4PC9wPg0KICAgICAgPGRpdiBjbGFzcz0ibml2ZWw0Ij4NCiAgICAgICAgPHA+TGV0cmEgZGUgODBweDwvcD4NCiAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICA8L2Rpdj4NCjwvZGl2Pg==%7CKiB7DQogIG1hcmdpbjogMDsNCn0NCg0KLm5pdmVsMSB7DQogIC8qIFB1ZWRlcyBjYW1iaWFyIGVzdGUgdmFsb3IgKi8NCiAgZm9udC1zaXplOiAyMHB4Ow0KfQ0KDQoubml2ZWwyIHsNCiAgLyogdGFtYcOxbyA9IDIwcHggKiAxID0gMjBweCAqLw0KICBmb250LXNpemU6IDFlbTsNCn0NCg0KLm5pdmVsMyB7DQogIC8qIHRhbWHDsW8gPSAyMHB4ICogMiA9IDQwcHggKi8NCiAgZm9udC1zaXplOiAyZW07DQp9DQoNCi5uaXZlbDQgew0KICAvKiB0YW1hw7FvID0gNDBweCAqIDIgPSA4MHB4ICovDQogIGZvbnQtc2l6ZTogMmVtOw0KfQ0KDQoNCg==%7C)
+In developer tools, you can view the font size in pixels.
+
+<p align="center">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/example-measurements.png?raw=true" width= "75%" alt="Measurement example">
+</p>
+
+[Example of rem Measurement](https://codi.link/PGRpdiBjbGFzcz0ibml2ZWwxIj4NCiAgPHA+TGV0cmEgZGUgMjBweDwvcD4NCiAgPGRpdiBjbGFzcz0ibml2ZWwyIj4NCiAgICA8cD5MZXRyYSBkZSAxNnB4PC9wPg0KICAgIDxkaXYgY2xhc3M9Im5pdmVsMyI+DQogICAgICA8cD5MZXRyYSBkZSAzMnB4PC9wPg0KICAgICAgPGRpdiBjbGFzcz0ibml2ZWw0Ij4NCiAgICAgICAgPHA+TGV0cmEgZGUgMzJweDwvcD4NCiAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICA8L2Rpdj4NCjwvZGl2Pg==%7CLm5pdmVsMSB7DQogIC8qIFB1ZWRlcyBjYW1iaWFyIGVzdGUgdmFsb3IgKi8NCiAgZm9udC1zaXplOiAyMHB4Ow0KfQ0KDQoubml2ZWwyIHsNCiAgLyogdGFtYcOxbyA9IDE2cHggKiAxID0gMTZweCAqLw0KICBmb250LXNpemU6IDFyZW07DQp9DQoNCi5uaXZlbDMgew0KICAvKiB0YW1hw7FvID0gMTZweCAqIDIgPSAzMnB4ICovDQogIGZvbnQtc2l6ZTogMnJlbTsNCn0NCg0KLm5pdmVsNCB7DQogIC8qIHRhbWHDsW8gPSAxNnB4ICogMiA9IDMycHggKi8NCiAgZm9udC1zaXplOiAycmVtOw0KfQ0KDQoNCg==%7C)
+
+<br>
+
+### Difference Between Percentages and Screen Width/Height
+Percentages represent the size relative to the total size of the parent element. If the parent element is ``20px``, then ``100%`` would be ``20px``.
+
+On the other hand, the units ``vw`` (view width) and ``vh`` (view height) represent the size relative to the total screen size. If an element has a size of ``100vw``, it takes up ``100%`` of the screen's width.
+
+If an element occupies the full screen size, then only at that point does ``100%`` equal ``100vw`` or ``100vh``.
+
+<br>
+
+### Problem with Text Measurements
+Browsers have an option to change text size. With absolute measurements, the text size will not change, which can be a problem for users.
+
+With relative measurements, the text size changes based on the root element's font size, which is a good solution for accessibilit``y. The ``rem`` unit is particularly useful for this.
+
+However, the default ``rem`` is equivalent to ``16px``, which can be confusing when using larger values. To address this, you can adjust the root element's font-size so that ``1rem`` is equal to ``10px``.
+
+In the ``<html>`` tag, change the ``font-size`` property to ``62.5%``, based on a simple ratio: if ``16px`` is ``100%``, what percentage represents 10px?
+```
+html {
+    font-size: 62.5%;
+}
+```
+
+With this change, 1rem will equal 10px, allowing you to use it without issue, and your text will adapt to user preferences.
 
 <br>
 <br>
