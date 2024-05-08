@@ -1773,11 +1773,6 @@ The best practices for CSS architectures are:
 <br>
 
 ## [OOCSS, BEM, SMACCSS, ITCSS and Atomic Design]()
-Ahora que ya conoces qué implica trabajar con una arquitectura de CSS, estudiemos las más comunes cuando se manipula código CSS.
-
-<br>
-
-### Qué es CSS Orientado a Objetos
 Now that you understand what it means to work with a CSS architecture, let's explore the most common ones when working with CSS code.
 
 <br>
@@ -1788,7 +1783,7 @@ The **OOCSS (Object-Oriented CSS)** architecture involves separating the main st
 In other words, it involves having objects that are the main structures. These objects are wrapped in a skin that can change while keeping the structure intact.
 
 <p align="center">
-  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/occss.png?raw=true" width= "75%" alt="OCCSS">
+  <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/oocss.png?raw=true" width= "75%" alt="OCCSS">
 </p>
 
 <br>
@@ -1852,8 +1847,15 @@ The Atomic Design architecture is also one of the most widely used today. It inv
 <br>
 
 # NEXT STEPS
-## CSS for interviews and labor market
+### [CSS Battle](https://cssbattle.dev/)
+### [Codepen](https://codepen.io/)
+### [Coderbyte](https://coderbyte.com/challenges)
+### [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 <br>
 <br>
 <br>
+
+# Author
+
+This project was developed by *Juan Cumbe*. If you have any questions or suggestions about the project, feel free to contact me via [e-mail](mailto:hello@juancumbe.com) or my [Linkedin](https://www.linkedin.com/in/juancumbeq/) profile. 
