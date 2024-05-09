@@ -171,3 +171,5 @@ dist
 *.swp
 *.out
 *.pdf
+
+other/
