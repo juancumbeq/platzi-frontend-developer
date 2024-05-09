@@ -6,7 +6,7 @@
 
 <br>
 
-## What did I learn throug this course:
+## What did I Learn Through this Course:
   - Introducction to frontend development
   - HTML layout
   - CSS layout
