@@ -17,7 +17,109 @@
 <br>
 
 ## Index
-  - [](#objetivos)
+  - [INTRODUCCTION TO FRONTEND DEVELOPMENT](#introduction-to-frontend-development)
+    - [What are HTML and CSS? What are they used for?](#what-is-html-and-css-what-are-they-used-for)
+      - [What is HTML?](#what-is-html)
+      - [What is CSS?](#what-is-css)
+    - [Render Engines: From Files to Pixels](#render-engines-from-files-to-pixels)
+      - [Which is the browser engine?](#which-is-the-browser-engine)
+      - [Rendering Process](#rendering-process)
+
+  - [HTML LAYOUT](#html-layout)
+    - [HTML Document Anatomy and its Elemtns](#html-document-anatomy-and-its-elements)
+      - [What are HTML Elements](#what-are-html-elements)
+      - [What are HTMl Attributes](#what-are-the-html-attributes)
+      - [What are Empty Elements](#what-are-empty-elements)
+      - [What are Element Nesting](#what-are-element-nesting)
+      - [Basic Stucture of an HTML Document](#basic-structure-of-an-html-document)
+      - [HTML Comments](#html-comments)
+    - [What is Semantic HTML](#what-is-semantic-html)
+      - [The Problem with the div Tag](#the-problem-with-the-div-tag)
+      - [Which Tags are Semantic](#which-tags-are-semantic)
+      - [Advantages of Using Semantic HTML](#advantages-of-using-semantic-html)
+    -[Most used HTML Tags](#most-used-html-tags)
+
+  - [CSS LAYOUT](#css-layout)
+    - [Anatomy of a CSS Declaration: Selectors, Properties and Values](#anatomy-of-a-css-declaration-selectors-properties-and-values)
+      - [What is a CSS Declaration](#what-is-a-css-declaration)
+      - [What are CSS Comments](#what-are-css-comments)
+      - [Basic CSS Properties](#basic-css-properties)
+      - [Basic Units of Measurement](#basic-units-of-measurement)
+    - [Selectors Types: Basics and Combiners](#selectors-types-basics-and-combiners)
+      - [Types of Basic Selectors](#types-of-basic-selectors)
+      - [What Are Combinator Selectors?](#what-are-combinator-selectors)
+      - [Types of Combinator Selectors](#types-of-combinator-selectors)
+    - [Selectors Types: Pseudoclasses and Pseudoelements](#selectors-types-pseudoclasses-and-pseudoelements)
+      - [What Are Pseudo-classes?](#what-are-pseudo-classes)
+      - [Syntax](#syntax)
+      - [Some Pseudo-classes](#some-pseudo-classes)
+      - [What Are Pseudo-elements?](#what-are-pseudo-elements)
+      - [Syntax](#syntax-1)
+      - [Some Pseudo-elements](#some-pseudo-elements)
+    - [Cascading and Specificity in CSS](#cascading-and-specificity-in-css)
+      - [What is CSS Cascade?](#what-is-css-cascade)
+      - [What is CSS Specificity?](#what-is-css-specificity)
+      - [Types of Specificity in CSS](#types-of-specificity-in-css)
+      - [Values with Higher Specificity](#values-with-higher-specificity)
+      - [Inline Styles](#inline-styles)
+      - [Specificity in Selectors](#specificity-in-selectors)
+    - [Most used Display Types: Block, Inline and Inline-block](#most-used-display-types-block-inline-and-inline-block)
+      - [Block Display](#block-display)
+      - [Inline Display](#inline-display)
+      - [Inline-Block Display](#inline-block-display)
+      - [No Display (None)](#no-display-none)
+    - [Most used Display Types: Flexbox and CSS grid](#most-used-display-types-flexbox-and-css-grid)
+      - [What is Flexbox?](#what-is-flexbox)
+      - [What is Grid?](#what-is-grid)
+    - [Box Model](#box-model)
+      - [What Is the Content of an HTML Element?](#what-is-the-content-of-an-html-element)
+      - [What Are the Borders of an HTML Element?](#what-are-the-borders-of-an-html-element)
+      - [What Is the Internal Spacing of an HTML Element or Padding?](#what-is-the-internal-spacing-of-an-html-element-or-padding)
+      - [What Is the External Spacing of an HTML Element or Margin?](#what-is-the-external-spacing-of-an-html-element-or-margin)
+      - [What Are Default Values?](#what-are-default-values)
+      - [What Is the Total Size of an Element?](#what-is-the-total-size-of-an-element)
+    - [``Box-Sizing`` Property](#box-sizing-property)
+      - [What Is the Problem with Border Size?](#what-is-the-problem-with-border-size)
+    - [Image Collapse](#image-collapse)
+    - [CSS Positioning](#css-positioning)
+      - [Position Properties](#position-properties)
+      - [Static Position](#static-position)
+      - [Relative Position](#relative-position)
+      - [Absolute Position](#absolute-position)
+      - [Nearest Parent Element with Relative Positioning](#nearest-parent-element-with-relative-positioning)
+      - [Difference between Relative and Absolute Positioning](#difference-between-relative-and-absolute-positioning)
+      - [Fixed Position](#fixed-position)
+      - [Sticky Position](#sticky-position)
+    - [Z-index and the Stacking Context](#z-index-and-the-stacking-context)
+      - [What are Planes and Axes?](#what-are-planes-and-axes)
+      - [What is the z-index Property?](#what-is-the-z-index-property)
+    - [Most used CSS Properties and Values](#most-used-css-properties-and-values)
+      - [Text Properties](#text-properties)
+      - [Rounded Borders](#rounded-borders)
+      - [Challenge](#challenge)
+
+  - [RESPONSIVE DESIGN](#responsive-design)
+    - [Measurement Units](#measurement-units)
+      - [What are Absolute Measurements?](#what-are-absolute-measurements)
+      - [What are Relative Measurements?](#what-are-relative-measurements)
+      - [Difference Between ``rem`` and`` em``](#difference-between-rem-and-em)
+      - [Difference Between Percentages and Screen Width/Height](#difference-between-percentages-and-screen-widthheight)
+      - [Problem with Text Measurements](#problem-with-text-measurements)
+    - [Responsive Design](#responsive-design)
+      -[Developer Tools for Media Queries](#developer-tools-for-media-queries)
+
+  - [CSS ARCHITECTURE](#css-architecture)
+    - [What are the CSS architectures? What are they used for?](#what-are-the-css-architectures-what-are-they-used-for)
+      - [Goals of CSS Architectures](#goals-of-css-architectures)
+      - [Best Practices for CSS Architectures](#best-practices-for-css-architectures)
+    - [OOCSS, BEM, SMACCSS, ITCSS and Atomic Design](#oocss-bem-smaccss-itcss-and-atomic-design)
+      - [What is Object-Oriented CSS?](#what-is-object-oriented-css)
+      - [What is BEM: Block, Element, and Modifier?](#what-is-bem-block-element-and-modifier)
+      - [What is the Scalable and Modular Architecture for CSS?](#what-is-the-scalable-and-modular-architecture-for-css)
+      - [What is the Inverted Triangle CSS Architecture?](#what-is-the-inverted-triangle-css-architecture)
+      - [What is Atomic Design?](#what-is-atomic-design)
+
+  - [NEXT STEPS](#next-steps)
 
 
 <br>
@@ -49,7 +151,7 @@ Rendering engines are programs that translates our code into a format that brows
 
 <br>
 
-### Which is the browser engine?
+### Which is the Browser Engine?
 
 Browsers have their own rendering engines: Chrome uses Blink, Edge uses Edge HTML, Safari uses Webkit y Firefox uses Gecko. Each engine compiles code in a slighly different way, but the result is the same: converting files into pixels.
 
@@ -81,7 +183,7 @@ Before we start writing HTML code, we should understand the structure of a docum
 <br>
 
 
-### What are HTML elements?
+### What are HTML Elements?
 
 Elements are the individual parts that make up an HTML file. Their structure contains:
   - Tags: There are an HTML element. Tags are divided into opening tags, represented by ```<tag>```, and closing tags, represented by ```</tag>```
@@ -95,19 +197,19 @@ Elements are the individual parts that make up an HTML file. Their structure con
 
 <br>
 
-### What are the HTML attributes?
+### What are the HTML Attributes?
 
 HTML attributes are propeties within the opening tags that control the behavior of the element. Their value is enclosed in quotation marks.
 
 <br>
 
-### What are empty elements?
+### What are Empty Elements?
 
 Empty elements are those that are represented only by an opnening tag. For example, the image tag: ```<img ...>```.
 
 <br>
 
-### What are element nesting?
+### What are Element Nesting?
 
 HTML element nesting involves wrapping several tags within other tags.
 
@@ -119,7 +221,7 @@ Tags that are contained within other tags are called "child" elements. For examp
 
 <br>
 
-### Basic structure of an HTML document
+### Basic Structure of an HTML Document
 
 The basic structure of an HTML document consists of the following key tags:
 
@@ -159,14 +261,14 @@ Example:
 
 <br>
 
-### HTML comments
+### HTML Comments
 
 HTML comments are used to annotate something that will be ignored during rendering. To add an HTML comment, it is wrapped between ```<!-- and -->```, regardless of the number of lines.
 
 <br>
 <br>
 
-## What is semantic HTML?
+## What is Semantic HTML?
 
 Semantic HTML means that each element has its own tag that accurately defines its purpose, avoiding the use of overly general tags like ```<div>``` or ```<span>```.
 
@@ -176,12 +278,12 @@ Semantic HTML means that each element has its own tag that accurately defines it
 
 <br>
 
-### The problem with the ```div``` tag
+### The Problem with the ```div``` Tag
 The *div* tag defines a generic block of content that lacks semantic value. It's used for design elements like containers.
 
 <br>
 
-### Which tags are semantic?
+### Which Tags are Semantic?
 Semantic tags to define a web page's interface include:
 
   - ```<header>```: Defines the page's header (not to be confused with ```<head>```).
@@ -243,7 +345,7 @@ The benefits of using semantic HTML include:
 <br>
 <br>
 
-## Most used HTML tags
+## Most used HTML Tags
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/most-used-tags.png?raw=true" width= "75%" alt="Most used tags">
@@ -296,13 +398,13 @@ Example:
 <br>
 
 # CSS LAYOUT
-## Anatomy of a CSS declaration: selectors, properties and values
+## Anatomy of a CSS Declaration: Selectors, Properties and Values
 
 Before we start writing CSS code, we need to understand the anatomy of a style declaration.
 
 <br>
 
-### What is a CSS declaration?
+### What is a CSS Declaration?
 A CSS declaration is a block that specifies the set of styles to be added to an HTML element. Its structure includes the following:
 
   - **Selector**: Defines the element or set of elements to which styles will be applied.
@@ -316,12 +418,12 @@ Example:
 
 <br>
 
-### What are CSS comments?
+### What are CSS Comments?
 CSS comments are used to indicate something that should be ignored. To create a CSS comment, wrap it between ```/*``` and ```*/```, regardless of the number of lines.
 
 <br>
 
-### Basic CSS properties
+### Basic CSS Properties
 Before starting with CSS, let's use some initial CSS properties:
 
   - **color**: Sets the text color of an element.
@@ -332,7 +434,7 @@ Before starting with CSS, let's use some initial CSS properties:
 
 <br>
 
-### Basic units of measurement
+### Basic Units of Measurement
 These are the initial units of measurement you should know to set the sizes of elements or typography:
 
   - **px**: Represents a length in pixels.
@@ -341,7 +443,7 @@ These are the initial units of measurement you should know to set the sizes of e
 <br>
 <br>
 
-## Selectors types: basics and combiners
+## Selectors Types: Basics and Combiners
 
 Selectors in CSS define the HTML element or set of elements to which styles will be applied. CSS has built-in color names that you can explore. Let's dive deeper into selectors.
 
@@ -919,7 +1021,7 @@ Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+
 <br>
 <br>
 
-## Selectors types: pseudoclasses and pseudoelements
+## Selectors Types: Pseudoclasses and Pseudoelements
 There are other types of selectors, besides basic and combinator selectors, capable of changing a state or adding something extra to the element. These are called pseudo-classes and pseudo-elements.
 
 <p align="center">
@@ -944,7 +1046,7 @@ selector : pseudo-class {
 }
 ```
 
-### Some pseudo-classes
+### Some Pseudo-classes
   - **:hover**: Represents the state when the cursor is hovering over the element.      
     - [Example](https://codi.link/PGRpdj5TZcOxw6FsYW1lPC9kaXY+%7CZGl2IHsNCiAgZm9udC1zaXplOiAzcmVtOw0KICBjdXJzb3I6IHBvaW50ZXI7DQp9DQoNCmRpdjpob3ZlciB7DQogIGNvbG9yOiByZWQ7DQp9%7C)
   
@@ -983,7 +1085,7 @@ selector :: pseudo-element {
 ```
 <br>
 
-### Some pseudo-elements
+### Some Pseudo-elements
 
   - **::before**: Adds content before the element. The content is added using the CSS content property.
     - [Example](https://codi.link/PGgxPlTDrXR1bG88L2gxPg0KPGgyPlN1YnTDrXR1bG9zPC9oMj4NCjxoMj5TdWJ0w610dWxvczwvaDI+DQo8aDI+U3VidMOtdHVsb3M8L2gyPg0KPGgyPlN1YnTDrXR1bG9zPC9oMj4NCjxoMj5TdWJ0w610dWxvczwvaDI+DQo=%7CaDI6YmVmb3JlIHsNCiAgY29udGVudDogIiAqICI7DQogIGNvbG9yOiByZWQ7DQp9%7C)
@@ -997,7 +1099,7 @@ selector :: pseudo-element {
 <br>
 <br>
 
-## Cascading and specificity in CSS
+## Cascading and Specificity in CSS
 At some point, when you're creating a website, you might encounter issues with styles, such as:
 
   - Why isn't the color I'm applying taking effect?
@@ -1595,7 +1697,7 @@ You can use the following code as a reference.
 <br>
 
 # RESPONSIVE DESIGN
-## [Measurement units]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
+## [Measurement Units]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
 Units of measurement determine the length for a specific element or typography. There are two types of measurements: absolute and relative.
 
 <p align="center">
@@ -1635,7 +1737,7 @@ Relative measurements are variable values, so the measurement depends on an exte
 
 <br>
 
-### Difference Between rem and em
+### Difference Between ``rem`` and`` em``
 The ``em`` unit depends on the containing element's size. If an element has a font-size of ``20px``, then ``1em`` is equivalent to ``20px``, and ``2em`` would be ``40px``, and so on.
 
 The ``rem`` unit depends on the root element. The font-size of the root element is usually ``16px``, so ``2rem`` is equivalent to ``32px``, and so on.
