@@ -37,7 +37,7 @@
       - [The Problem with the div Tag](#the-problem-with-the-div-tag)
       - [Which Tags are Semantic](#which-tags-are-semantic)
       - [Advantages of Using Semantic HTML](#advantages-of-using-semantic-html)
-    -[Most used HTML Tags](#most-used-html-tags)
+    - [Most used HTML Tags](#most-used-html-tags)
 
   - [CSS LAYOUT](#css-layout)
     - [Anatomy of a CSS Declaration: Selectors, Properties and Values](#anatomy-of-a-css-declaration-selectors-properties-and-values)
@@ -268,7 +268,7 @@ HTML comments are used to annotate something that will be ignored during renderi
 <br>
 <br>
 
-## What is Semantic HTML?
+## [What is Semantic HTML?](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/semantic.html)
 
 Semantic HTML means that each element has its own tag that accurately defines its purpose, avoiding the use of overly general tags like ```<div>``` or ```<span>```.
 
@@ -345,7 +345,7 @@ The benefits of using semantic HTML include:
 <br>
 <br>
 
-## Most used HTML Tags
+## [Most used HTML Tags](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/etiquetas.html)
 
 <p align="center">
   <img src="https://github.com/juancumbeq/platzi-frontend-developer/blob/main/readme_images/most-used-tags.png?raw=true" width= "75%" alt="Most used tags">
@@ -398,7 +398,7 @@ Example:
 <br>
 
 # CSS LAYOUT
-## Anatomy of a CSS Declaration: Selectors, Properties and Values
+## [Anatomy of a CSS Declaration: Selectors, Properties and Values]()
 
 Before we start writing CSS code, we need to understand the anatomy of a style declaration.
 
@@ -443,7 +443,7 @@ These are the initial units of measurement you should know to set the sizes of e
 <br>
 <br>
 
-## Selectors Types: Basics and Combiners
+## [Selectors Types: Basics and Combiners](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-1.html)
 
 Selectors in CSS define the HTML element or set of elements to which styles will be applied. CSS has built-in color names that you can explore. Let's dive deeper into selectors.
 
@@ -760,7 +760,7 @@ Check the demo [here](https://codi.link/PGRpdj4NCiAgPHVsPg0KICAgIDxsaT48L2xpPg0K
 
 <br>
 
-### What Are Combinator Selectors?
+### [What Are Combinator Selectors?](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-2.html)
 A combinator selector is the combination of two or more basic selectors.
 ```
 selector1 selector2 selector3 {
@@ -1021,7 +1021,7 @@ Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+
 <br>
 <br>
 
-## Selectors Types: Pseudoclasses and Pseudoelements
+## [Selectors Types: Pseudoclasses and Pseudoelements](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-3.html)
 There are other types of selectors, besides basic and combinator selectors, capable of changing a state or adding something extra to the element. These are called pseudo-classes and pseudo-elements.
 
 <p align="center">
@@ -1099,7 +1099,7 @@ selector :: pseudo-element {
 <br>
 <br>
 
-## Cascading and Specificity in CSS
+## [Cascading and Specificity in CSS](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/especificidad.html)
 At some point, when you're creating a website, you might encounter issues with styles, such as:
 
   - Why isn't the color I'm applying taking effect?
@@ -1186,7 +1186,7 @@ In the other hand, there is a [specificity calculator](https://specificity.keega
 <br>
 <br>
 
-## Most used Display Types: Block, Inline and Inline-block
+## [Most used Display Types: Block, Inline and Inline-block](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-1.html)
 The ``display`` property sets the type of visual representation for HTML elements without affecting the normal flow of elements.
 
 <p align="center">
@@ -1236,7 +1236,7 @@ If an element exceeds the total content width, it moves to the next line below.
 <br>
 <br>
 
-## Most used Display Types: Flexbox and CSS grid
+## [Most used Display Types: Flexbox and CSS grid](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-2-flexbox.html)
 Flexbox and Grid are recent methods for displaying elements, and each has its own features for effectively creating interfaces. Both start from a parent container that gives child elements special positioning powers.
 
 Both are highly useful tools in development, especially for creating user-friendly interfaces that are adaptable to any device, known as responsive design.
@@ -1256,7 +1256,7 @@ Flexbox involves arranging child elements along a single axis, usually horizonta
 
 <br>
 
-### What is Grid?
+### [What is Grid?](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-2-cssgrid.html)
 Grid involves arranging child elements along two axes, like a grid or table. The parent element or container must have the display property set to grid, and you must define the dimensions of the columns and rows. From there, you can organize the children as needed.
 
 [Example of Grid](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCiAgPGRpdj48L2Rpdj4NCjwvZGl2Pg0KDQoNCg0K%7CKiB7DQogIG1hcmdpbjogMDsNCiAgcGFkZGluZzogMDsNCiAgYm94LXNpemluZzogYm9yZGVyLWJveDsNCn0NCg0KLyogUXVpdGEgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0KLmNvbnRhaW5lcnsNCi8qICAgDQogIGRpc3BsYXk6IGdyaWQ7DQogIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTAwcHggMTAwcHggMTAwcHg7DQogIGdyaWQtdGVtcGxhdGUtcm93czogMTAwcHggMTAwcHggMTAwcHg7IA0KICAqLw0KDQoNCn0NCg0KLmNvbnRhaW5lciBkaXYgew0KICB3aWR0aDogMTAwcHg7IA0KICBoZWlnaHQ6IDEwMHB4Ow0KfQ0KDQouY29udGFpbmVyIGRpdjpudGgtY2hpbGQoMm4pew0KICBiYWNrZ3JvdW5kLWNvbG9yOiBhcXVhOw0KfQ0KDQouY29udGFpbmVyIGRpdjpudGgtY2hpbGQoMm4rMSl7DQogIGJhY2tncm91bmQtY29sb3I6IGJyb3duOw0KfQ0KDQoNCg0KDQoNCg0K%7C)
@@ -1267,7 +1267,7 @@ Grid involves arranging child elements along two axes, like a grid or table. The
 <br>
 <br>
 
-## Box Model
+## [Box Model](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/modelo-de-caja.html)
 The box model consists of four elements: margin, border, padding, and content.
 
 <p align="center">
@@ -1459,7 +1459,7 @@ Avoid adding a different size than the original one.
 <br>
 <br>
 
-## Image Collapse
+## [Image Collapse](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/colapso-de-margenes.html)
 Margin collapse occurs when two adjacent block elements have a certain margin value, causing those margins to overlap into a single value, which is the larger of the two.
 
 <p align="center">
@@ -1480,7 +1480,7 @@ As you can see, when you change the display, this behavior disappears. Additiona
 <br>
 <br>
 
-## [CSS Positioning](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/posicionamiento.html)
+## [CSS Positioning](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/posicionamiento.html)
 CSS positioning refers to how an element is placed relative to its parent element and the normal flow of the document. The normal flow of the document is the order of elements established in the HTML.
 
 An element's position is defined using the ``position`` property with the following possible values:
@@ -1596,7 +1596,7 @@ In the following example, scroll through the document and notice the behavior be
 <br>
 <br>
 
-## [Z-index and the Stacking Context](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/z-index.html)
+## [Z-index and the Stacking Context](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/z-index.html)
 The stacking context refers to the overlapping of layers or elements along the Z-axis of the browser. This is crucial to avoid one element obscuring another.
 
 <p align="center">
@@ -1645,7 +1645,7 @@ As you can see in the image, the element with the class "yellow" has a higher ``
 <br>
 <br>
 
-## [Most used CSS Properties and Values]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/propiedades-mas-usadas.html))
+## [Most used CSS Properties and Values]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/propiedades-mas-usadas.html))
 The most commonly used CSS properties are as follows, grouped into typical sections, some of which we are already familiar with:
 
   - Display
@@ -1697,7 +1697,7 @@ You can use the following code as a reference.
 <br>
 
 # RESPONSIVE DESIGN
-## [Measurement Units]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
+## [Measurement Units]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/unidades-de-medida.html))
 Units of measurement determine the length for a specific element or typography. There are two types of measurements: absolute and relative.
 
 <p align="center">
@@ -1779,12 +1779,12 @@ html {
 
 With this change, 1rem will equal 10px, allowing you to use it without issue, and your text will adapt to user preferences.
 
-[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html)
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/unidades-de-medida.html)
 
 <br>
 <br>
 
-## [Responsive Design]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/diseño-responsivo.html))
+## [Responsive Design]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/diseño-responsivo.html))
 Responsive Design is a set of tools that ensure your site looks good across various screen sizes, including adjustments for images, typography, page internationalization, and more.
 
 Currently, most websites are accessed from mobile devices, so ensuring that your site is responsive on any device is crucial for optimizing revenue.
@@ -1836,7 +1836,7 @@ Use the following example to visualize how styles change depending on the screen
 
 [Example of Media Queries](https://codi.link/PGRpdiBjbGFzcz0iY2FyZDEiPjwvZGl2Pg0KPGRpdiBjbGFzcz0iY2FyZDIiPjwvZGl2Pg0KDQo=%7CKiB7DQogIG1hcmdpbjogMDsNCiAgcGFkZGluZzogMDsNCiAgYm94LXNpemluZzogYm9yZGVyLWJveDsNCn0NCg0KYm9keSB7DQogIHdpZHRoOiAxMDB2dzsNCiAgaGVpZ2h0OiAxMDB2aDsNCn0NCg0KLmNhcmQxew0KICB3aWR0aDogMTAwJTsNCiAgaGVpZ2h0OiAyNSU7DQogIGJhY2tncm91bmQtY29sb3I6IGJyb3duOw0KfQ0KDQouY2FyZDIgew0KICB3aWR0aDogNTAlOw0KICBoZWlnaHQ6IDc1JTsNCiAgYmFja2dyb3VuZC1jb2xvcjogY2hhcnRyZXVzZTsNCn0NCg0KQG1lZGlhIChtaW4td2lkdGg6IDUwMHB4KXsNCiAgLmNhcmQxIHsNCiAgICAgIGJhY2tncm91bmQtY29sb3I6IGNoYXJ0cmV1c2U7DQogIH0NCg0KICAuY2FyZDIgew0KICAgIGJhY2tncm91bmQtY29sb3I6IGJyb3duOw0KICB9DQp9DQoNCg==%7C)
 
-[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/diseño-responsivo.html))
+[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/diseño-responsivo.html))
 
 <br>
 <br>
