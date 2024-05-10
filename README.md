@@ -266,6 +266,10 @@ Example:
 HTML comments are used to annotate something that will be ignored during rendering. To add an HTML comment, it is wrapped between ```<!-- and -->```, regardless of the number of lines.
 
 <br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/index.html)
+
+<br>
 <br>
 
 ## [What is Semantic HTML?](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/semantic.html)
@@ -343,6 +347,10 @@ The benefits of using semantic HTML include:
   - [Go deep into the advantages here](https://www.espai.es/blog/2018/01/que-es-el-html-semantico/)
 
 <br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/semantic.html)
+
+<br>
 <br>
 
 ## [Most used HTML Tags](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/etiquetas.html)
@@ -392,6 +400,9 @@ Example:
 </body>
 </html>
 ```
+<br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/etiquetas.html)
 
 <br>
 <br>
@@ -1017,6 +1028,10 @@ div ~ p {
 ```
 Check the demo [here](https://codi.link/PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQogIDxkaXY+U295IHVuIGRpdjwvZGl2Pg0KICA8cD5Tb3kgdW4gcMOhcnJhZm8gaGVybWFubyBkZSBkaXY8L3A+DQogIDxwPlNveSB1biBww6FycmFmbyBoZXJtYW5vIGRlIGRpdjwvcD4NCiAgPHA+U295IHVuIHDDoXJyYWZvIGhlcm1hbm8gZGUgZGl2PC9wPg0KPC9kaXY+DQo8aHIvPg==%7CLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCmRpdiB+IHAgew0KICBjb2xvcjogcmVkOw0KfQ0KLypBZ3JlZ2EgbG9zIHNlbGVjdG9yZXMgYXF1w60gKi8NCg==%7C)
 
+<br>
+
+[Check the practice file 1](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-1.html)
+[Check the practice file 2](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-2.html)
 
 <br>
 <br>
@@ -1095,6 +1110,10 @@ selector :: pseudo-element {
 
   - **::first-letter**: Adds styles to the first letter of the text in any element.
     - [Example](https://codi.link/PHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0KPHA+U295IG90cm8gcMOhcnJhZm88L3A+DQo8cD5Tb3kgb3RybyBww6FycmFmbzwvcD4NCjxwPlNveSBvdHJvIHDDoXJyYWZvPC9wPg0K%7COjpmaXJzdC1sZXR0ZXJ7DQogIGNvbG9yOiByZWQ7DQp9DQo=%7C)
+
+<br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/selectores-3.html)
 
 <br>
 <br>
@@ -1183,6 +1202,11 @@ In a project, you should avoid using ``!important`` and inline styles, focusing 
 If you're using **Visual Studio Code**, hovering over a selector will show the total specificity. Specificity Calculator is a website where you can calculate specificity.
 
 In the other hand, there is a [specificity calculator](https://specificity.keegan.st/)
+
+<br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/especificidad.html)
+
 <br>
 <br>
 
@@ -1234,6 +1258,10 @@ If an element exceeds the total content width, it moves to the next line below.
 [Example of Display None](https://codi.link/PGRpdj48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2IGNsYXNzPSJkZXNhcGFyZWNlciI+DQogIEVuIG1pIHNpZ3VpZW50ZSB0cnVjbywgwqF2b3kgYSBkZXNhcGFyZWNlciENCjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PC9kaXY+DQo=%7CLyogUXVpdGEgbG9zIGNvbWVudGFyaW9zIHkgb2JzZXJ2YSBlbCBjb21wb3J0YW1pZW50byAqLw0KLmRlc2FwYXJlY2Vyew0KICAvKiBkaXNwbGF5OiBub25lOyAqLw0KICBiYWNrZ3JvdW5kLWNvbG9yOiBjb3JuZmxvd2VyYmx1ZTsNCiAgDQp9DQoNCi8qIElnbm9yYSBlc3RvcyBlc3RpbG9zLCBwb3IgYWhvcmEgKi8NCiogew0KICBib3gtc2l6aW5nOiBib3JkZXItYm94Ow0KICBmb250LXNpemU6IDEuMXJlbTsNCiAgbWFyZ2luOiAwOw0KfQ0KDQpib2R5ew0KICBkaXNwbGF5OiBmbGV4Ow0KfQ0KDQpkaXZ7DQogIGJhY2tncm91bmQtY29sb3I6IGNvcmFsOw0KICB3aWR0aDogMTIwcHg7DQogIGhlaWdodDogMTIwcHg7DQogIGZvbnQtd2VpZ2h0OiA4MDA7DQogIHBhZGRpbmc6IDhweDsNCn0NCg0KDQoNCg==%7C)
 
 <br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-1.html)
+
+<br>
 <br>
 
 ## [Most used Display Types: Flexbox and CSS grid](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-2-flexbox.html)
@@ -1263,6 +1291,12 @@ Grid involves arranging child elements along two axes, like a grid or table. The
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 [Flexbox VS Grid](https://platzi.com/blog/flexbox-vs-css-grid-cual-es-la-diferencia/)
+
+<br>
+
+[Check the practice file 1](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-2-flexbox.html)
+
+[Check the practice file 2](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/display-2-cssgrid.html)
 
 <br>
 <br>
@@ -1411,7 +1445,12 @@ Even if the elements' dimensions are known this way, you won't always have compl
 
 <br>
 
-## ``Box-Sizing`` Property
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/modelo-de-caja.html)
+
+<br>
+<br>
+
+## [``Box-Sizing`` Property]()
 The ``box-sizing`` property sets how width and height are calculated—whether they include borders and padding. A best practice is to set this in the universal selector, so all elements follow this approach.
 ```
 * {
@@ -1476,6 +1515,9 @@ Look at the following code, change the display value to inline-block, and observ
 
 As you can see, when you change the display, this behavior disappears. Additionally, in Flexbox and Grid, margin collapse does not occur. Be mindful of the margins you set on block-type elements.
 
+<br>
+
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/colapso-de-margenes.html)
 
 <br>
 <br>
@@ -1593,6 +1635,7 @@ In the following example, scroll through the document and notice the behavior be
 [Example of Sticky Position](https://codi.link/PGRpdj4NCiAgPHA+U295IHVuIHDDoXJyYWZvIDE8L3A+DQogIDx1bD4NCiAgICA8bGk+RWxlbWVudG8gMTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDI8L2xpPg0KICAgIDxsaT5FbGVtZW50byAzPC9saT4NCiAgICA8bGk+RWxlbWVudG8gNDwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDU8L2xpPg0KICAgIDxsaT5FbGVtZW50byA2PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDg8L2xpPg0KICAgIDxsaT5FbGVtZW50byA5PC9saT4NCiAgICA8bGk+RWxlbWVudG8gMTA8L2xpPg0KICA8L3VsPg0KICA8cD5Tb3kgdW4gcMOhcnJhZm8gMjwvcD4NCiAgPHVsPg0KICAgIDxsaT5FbGVtZW50byAxPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDM8L2xpPg0KICAgIDxsaT5FbGVtZW50byA0PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDY8L2xpPg0KICAgIDxsaT5FbGVtZW50byA3PC9saT4NCiAgICA8bGk+RWxlbWVudG8gODwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDk8L2xpPg0KICAgIDxsaT5FbGVtZW50byAxMDwvbGk+DQogIDwvdWw+DQogIDxwPlNveSB1biBww6FycmFmbyAzPC9wPg0KICA8dWw+DQogICAgPGxpPkVsZW1lbnRvIDE8L2xpPg0KICAgIDxsaT5FbGVtZW50byAyPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDQ8L2xpPg0KICAgIDxsaT5FbGVtZW50byA1PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDc8L2xpPg0KICAgIDxsaT5FbGVtZW50byA4PC9saT4NCiAgICA8bGk+RWxlbWVudG8gOTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDEwPC9saT4NCiAgPC91bD4NCiAgPHA+U295IHVuIHDDoXJyYWZvIDQ8L3A+DQogIDx1bD4NCiAgICA8bGk+RWxlbWVudG8gMTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDI8L2xpPg0KICAgIDxsaT5FbGVtZW50byAzPC9saT4NCiAgICA8bGk+RWxlbWVudG8gNDwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDU8L2xpPg0KICAgIDxsaT5FbGVtZW50byA2PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDg8L2xpPg0KICAgIDxsaT5FbGVtZW50byA5PC9saT4NCiAgICA8bGk+RWxlbWVudG8gMTA8L2xpPg0KICA8L3VsPg0KICA8cD5Tb3kgdW4gcMOhcnJhZm8gNTwvcD4NCiAgPHVsPg0KICAgIDxsaT5FbGVtZW50byAxPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDM8L2xpPg0KICAgIDxsaT5FbGVtZW50byA0PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDY8L2xpPg0KICAgIDxsaT5FbGVtZW50byA3PC9saT4NCiAgICA8bGk+RWxlbWVudG8gODwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDk8L2xpPg0KICAgIDxsaT5FbGVtZW50byAxMDwvbGk+DQogIDwvdWw+DQogIDxwPlNveSB1biBww6FycmFmbyA2PC9wPg0KICA8dWw+DQogICAgPGxpPkVsZW1lbnRvIDE8L2xpPg0KICAgIDxsaT5FbGVtZW50byAyPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDQ8L2xpPg0KICAgIDxsaT5FbGVtZW50byA1PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDc8L2xpPg0KICAgIDxsaT5FbGVtZW50byA4PC9saT4NCiAgICA8bGk+RWxlbWVudG8gOTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDEwPC9saT4NCiAgPC91bD4NCiAgPHA+U295IHVuIHDDoXJyYWZvIDc8L3A+DQogIDx1bD4NCiAgICA8bGk+RWxlbWVudG8gMTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDI8L2xpPg0KICAgIDxsaT5FbGVtZW50byAzPC9saT4NCiAgICA8bGk+RWxlbWVudG8gNDwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDU8L2xpPg0KICAgIDxsaT5FbGVtZW50byA2PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDg8L2xpPg0KICAgIDxsaT5FbGVtZW50byA5PC9saT4NCiAgICA8bGk+RWxlbWVudG8gMTA8L2xpPg0KICA8L3VsPg0KICA8cD5Tb3kgdW4gcMOhcnJhZm8gODwvcD4NCiAgPHVsPg0KICAgIDxsaT5FbGVtZW50byAxPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDM8L2xpPg0KICAgIDxsaT5FbGVtZW50byA0PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDY8L2xpPg0KICAgIDxsaT5FbGVtZW50byA3PC9saT4NCiAgICA8bGk+RWxlbWVudG8gODwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDk8L2xpPg0KICAgIDxsaT5FbGVtZW50byAxMDwvbGk+DQogIDwvdWw+DQogIDxwPlNveSB1biBww6FycmFmbyA5PC9wPg0KICA8dWw+DQogICAgPGxpPkVsZW1lbnRvIDE8L2xpPg0KICAgIDxsaT5FbGVtZW50byAyPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDQ8L2xpPg0KICAgIDxsaT5FbGVtZW50byA1PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDc8L2xpPg0KICAgIDxsaT5FbGVtZW50byA4PC9saT4NCiAgICA8bGk+RWxlbWVudG8gOTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDEwPC9saT4NCiAgPC91bD4NCiAgPHA+U295IHVuIHDDoXJyYWZvIDEwPC9wPg0KICA8dWw+DQogICAgPGxpPkVsZW1lbnRvIDE8L2xpPg0KICAgIDxsaT5FbGVtZW50byAyPC9saT4NCiAgICA8bGk+RWxlbWVudG8gMzwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDQ8L2xpPg0KICAgIDxsaT5FbGVtZW50byA1PC9saT4NCiAgICA8bGk+RWxlbWVudG8gNjwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDc8L2xpPg0KICAgIDxsaT5FbGVtZW50byA4PC9saT4NCiAgICA8bGk+RWxlbWVudG8gOTwvbGk+DQogICAgPGxpPkVsZW1lbnRvIDEwPC9saT4NCiAgPC91bD4NCjwvZGl2Pg==%7CKiB7DQogIG1hcmdpbjogMDsNCiAgcGFkZGluZzogMDsNCiAgYm94LXNpemluZzogYm9yZGVyLWJveDsNCiAgZm9udC1zaXplOiAxLjFyZW07DQp9DQoNCi8qIERlc3Bsw6F6YXRlIHBvciBlbCBkb2N1bWVudG8geSBkZXNwdcOpcyBxdWl0YSBsb3MgY29tZW50YXJpb3MgeSBvYnNlcnZhIGVsIGNvbXBvcnRhbWllbnRvICovDQoNCnAgew0KICAvKiBwb3NpdGlvbjogc3RpY2t5OyAqLw0KICAvKiB0b3A6IDA7ICovDQogIGJhY2tncm91bmQtY29sb3I6IGNvcm5mbG93ZXJibHVlOw0KICBwYWRkaW5nOiAxMHB4Ow0KfQ0KDQpsaSB7DQogIG1hcmdpbjogMjBweCAzMHB4Ow0KfQ0KDQoNCg0KDQoNCg0KDQoNCg0K%7C)
 
 [Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/posicionamiento.html)
+
 <br>
 <br>
 
@@ -1640,7 +1683,7 @@ As you can see in the image, the element with the class "yellow" has a higher ``
 
 [Quiz](https://gist.github.com/teffcode/e0b3e89df22ecf5374527deaf31b11ca)
 
-[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/z-index.html)
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/z-index.html)
 
 <br>
 <br>
@@ -1690,7 +1733,7 @@ You can use the following code as a reference.
 
 [Example](https://codi.link/PHNlY3Rpb24+DQogIDxkaXYgY2xhc3M9ImNhcmQiPg0KICAgIDxpbWcgc3JjPSJodHRwczovL2ltYWdlcy5wZXhlbHMuY29tL3Bob3Rvcy8xMDU2MjUxL3BleGVscy1waG90by0xMDU2MjUxLmpwZWc/YXV0bz1jb21wcmVzcyZjcz10aW55c3JnYiZoPTY1MCZ3PTk0MCIgYWx0PSJjYXQiPg0KICAgIDxwPkNhdDogTWltaTwvcD4NCiAgICA8cD5Mb3ZlPC9wPg0KICA8L2Rpdj4NCjwvc2VjdGlvbj4=%7Cc2VjdGlvbiB7DQogIHdpZHRoOiAxMDAlOw0KICBkaXNwbGF5OiBmbGV4Ow0KICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCn0NCg0KLmNhcmQgew0KICB3aWR0aDogMzAwcHg7DQogIGhlaWdodDogMzAwcHg7DQogIGJhY2tncm91bmQ6IHBhcGF5YXdoaXA7DQogIGJvcmRlci1yYWRpdXM6IDIwcHg7DQogIG92ZXJmbG93OiBoaWRkZW47DQp9DQoNCi5jYXJkIGltZyB7DQogIHdpZHRoOiAxMDAlOw0KfQ0KDQouY2FyZCBwIHsNCiAgdGV4dC1hbGlnbjogY2VudGVyOw0KfQ0KDQouY2FyZCBwOm50aC1jaGlsZCgzKSB7DQogIGNvbG9yOiBUdXJxdW9pc2U7DQp9%7C)
 
-[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/propiedades-mas-usadas.html))
+[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/propiedades-mas-usadas.html))
 
 <br>
 <br>
