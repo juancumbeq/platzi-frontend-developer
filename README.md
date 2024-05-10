@@ -127,7 +127,7 @@
 <br>
 
 # INTRODUCTION TO FRONTEND DEVELOPMENT
-## What is HTML and CSS? What are they used for?
+## [What is HTML and CSS? What are they used for?]()
 
 Websites are built using tree essential technologies: HTML, CSS and JavaScript. These tree languages form the foundations of the web.
 
@@ -145,7 +145,7 @@ CSS stands for Cascade Style Sheets. It is the code that describes the presentat
 
 <br>
 
-## Render Engines: From Files to Pixels.
+## [Render Engines: From Files to Pixels]()
 
 Rendering engines are programs that translates our code into a format that browsers can understand. This way, the brower knows what to display on the screen for the user.
 
@@ -176,7 +176,7 @@ The browser engine performs five steps to compile our code and render it on the 
 <br>
 
 # HTML LAYOUT
-## HTML Document Anatomy and its Elements
+## [HTML Document Anatomy and its Elements](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/files/index.html)
 
 Before we start writing HTML code, we should understand the structure of a document and its elements
 
@@ -1779,7 +1779,7 @@ html {
 
 With this change, 1rem will equal 10px, allowing you to use it without issue, and your text will adapt to user preferences.
 
-[Check the practice file]((https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html))
+[Check the practice file](https://github.com/juancumbeq/platzi-frontend-developer/blob/main/resources/repo/curso-1/unidades-de-medida.html)
 
 <br>
 <br>
